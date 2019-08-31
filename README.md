@@ -9,3 +9,4 @@
 7. Make a Pull Request to the original nzittraining repository thru GitHub interface
 
 Happy coding! Anything you need, don't be hesitate to contact our WeChat assistant **nz-it-training**.
+yes
