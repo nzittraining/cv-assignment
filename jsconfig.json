@@ -1,0 +1,10 @@
+// https://code.visualstudio.com/docs/languages/jsconfig
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
