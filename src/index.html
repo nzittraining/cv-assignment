@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="main">
-      <div id="header-wrapper">
+      <div id="header" class="header-wrapper">
         <ul id="main-nav">
           <li class="main-nav-item"><a href="">Home</a></li>
         </ul>
@@ -19,7 +19,7 @@
       </div>
 
       <div id="banner1" class="banner1-wrapper">
-        <div class="banner1-cv-title">
+        <div id="banner1-cv-title" class="banner1-cv-title">
           <div class="banner1-cv-title-name"><span>John Roberts</span></div>
           <div class="banner1-cv-title-position">
             <span>BUSINESS EXPERT</span>
@@ -37,125 +37,182 @@
       </div>
 
       <div id="banner2" class="banner2-wrapper">
-        <div class="avatar-container">
-          <img src="" alt="photo" />
-        </div>
-        <div id="personal-info-Carousel" class="personal-info-wrapper">
-          <ul class="carousel-container">
-            <li class="carousel-cards" id="personal-info-aboutMe">
-              <h2 class="personal-info-cards-title">ABOUT ME</h2>
-              <div class="social-media-btn-group">
-                <img class="social-media-btn" src="" alt="linkedin" />
-                <img class="social-media-btn" src="" alt="twitter" />
-                <img class="social-media-btn" src="" alt="facebook" />
-              </div>
-              <div id="personal-info-aboutMe-left-p">
-                <p>
-                  I'm a paragraph. Click here to add your own text and edit me.
-                  It’s easy. Just click “Edit Text” or double click me to add
-                  your own content and make changes to the font. Feel free to
-                  drag and drop me anywhere you like on your page. I’m a great
-                  place for you to tell a story and let your users know a little
-                  more about you.
-                </p>
-              </div>
-              <div id="personal-info-aboutMe-right-p">
-                <p>
-                  I'm a paragraph. Click here to add your own text and edit me.
-                  It’s easy. Just click “Edit Text” or double click me to add
-                  your own content and make changes to the font. Feel free to
-                  drag and drop me anywhere you like on your page. I’m a great
-                  place for you to tell a story and let your users know a little
-                  more about you.
-                </p>
-              </div>
-            </li>
-
-            <li class="carousel-cards" id="personal-info-hobbies">
-              <h2 class="personal-info-cards-title">HOBBIES & INTERESTS</h2>
-              <ul class="personal-info-hobbies-list">
-                <li class="personal-info-hobbies-item">
-                  <img
-                    class="personal-info-hobbies-item-icon"
-                    src=""
-                    alt="cinema-icon"
-                  />
-                  <span class="personal-info-hobbies-item-label">Cinema</span>
-                </li>
-                <li class="personal-info-hobbies-item">
-                  <img
-                    class="personal-info-hobbies-item-icon"
-                    src=""
-                    alt="sport-icon"
-                  />
-                  <span class="personal-info-hobbies-item-label">Sport</span>
-                </li>
-              </ul>
-            </li>
-
-            <li class="carousel-cards" id="personal-info-eduexp">
-              <h2 class="personal-info-cards-title">Education</h2>
-              <div class="personal-info-eduexp-cards-group">
-                <div class="personal-info-eduexp-card">
-                  <h3 class="personal-info-eduexp-card-name">
-                    The San Francisco Business School
-                  </h3>
-                  <span class="personal-info-eduexp-card-period"
-                    >2014 - Current</span
-                  >
-                  <span class="personal-info-eduexp-card-desc"
-                    >This is a description of your work experience. Concisely
-                    describe your previous position in a way that’s easy for
-                    readers to scan quickly.</span
-                  >
+        <div if="banner2-personal-info" class="banner2-personal-info">
+          <div class="avatar-container">
+            <img src="" alt="photo" />
+          </div>
+          <div id="personal-info-Carousel" class="personal-info-wrapper">
+            <ul class="carousel-container">
+              <li class="carousel-cards" id="personal-info-aboutMe">
+                <h2 class="personal-info-cards-title">ABOUT ME</h2>
+                <div class="social-media-btn-group">
+                  <img class="social-media-btn" src="" alt="linkedin" />
+                  <img class="social-media-btn" src="" alt="twitter" />
+                  <img class="social-media-btn" src="" alt="facebook" />
                 </div>
-                <div class="personal-info-edu-card">
-                  <h3 class="personal-info-edu-card-name">
-                    NYC School of Marketing and Advertising
-                  </h3>
-                  <span class="personal-info-edu-card-period">2007 - 2020</span>
-                  <span class="personal-info-edu-card-desc"
-                    >This is a description of your work experience. Concisely
-                    describe your previous position in a way that’s easy for
-                    readers to scan quickly.</span
-                  >
+                <div id="personal-info-aboutMe-left-p">
+                  <p>
+                    I'm a paragraph. Click here to add your own text and edit
+                    me. It’s easy. Just click “Edit Text” or double click me to
+                    add your own content and make changes to the font. Feel free
+                    to drag and drop me anywhere you like on your page. I’m a
+                    great place for you to tell a story and let your users know
+                    a little more about you.
+                  </p>
                 </div>
-              </div>
-            </li>
+                <div id="personal-info-aboutMe-right-p">
+                  <p>
+                    I'm a paragraph. Click here to add your own text and edit
+                    me. It’s easy. Just click “Edit Text” or double click me to
+                    add your own content and make changes to the font. Feel free
+                    to drag and drop me anywhere you like on your page. I’m a
+                    great place for you to tell a story and let your users know
+                    a little more about you.
+                  </p>
+                </div>
+              </li>
 
-            <li class="carousel-cards" id="personal-info-eduexp">
-              <h2 class="personal-info-cards-title">EXPERIENCE</h2>
-              <div class="personal-info-eduexp-cards-group">
-                <div class="personal-info-eduexp-card">
-                  <h3 class="personal-info-eduexp-card-name">
-                    Budget Director
-                    <span class="personal-info-eduexp-card-workplace"
-                      >@Wix.com</span
+              <li class="carousel-cards" id="personal-info-hobbies">
+                <h2 class="personal-info-cards-title">HOBBIES & INTERESTS</h2>
+                <ul class="personal-info-hobbies-list">
+                  <li class="personal-info-hobbies-item">
+                    <img
+                      class="personal-info-hobbies-item-icon"
+                      src=""
+                      alt="cinema-icon"
+                    />
+                    <span class="personal-info-hobbies-item-label">Cinema</span>
+                  </li>
+                  <li class="personal-info-hobbies-item">
+                    <img
+                      class="personal-info-hobbies-item-icon"
+                      src=""
+                      alt="sport-icon"
+                    />
+                    <span class="personal-info-hobbies-item-label">Sport</span>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="carousel-cards" id="personal-info-eduexp">
+                <h2 class="personal-info-cards-title">Education</h2>
+                <div class="personal-info-eduexp-cards-group">
+                  <div class="personal-info-eduexp-card">
+                    <h3 class="personal-info-eduexp-card-name">
+                      The San Francisco Business School
+                    </h3>
+                    <span class="personal-info-eduexp-card-period"
+                      >2014 - Current</span
                     >
-                  </h3>
-                  <span class="personal-info-eduexp-card-period"
-                    >2014 - Current</span
-                  >
-                  <span class="personal-info-eduexp-card-desc"
-                    >This is a description of your work experience. Concisely
-                    describe your previous position in a way that’s easy for
-                    readers to scan quickly.</span
-                  >
+                    <span class="personal-info-eduexp-card-desc"
+                      >This is a description of your work experience. Concisely
+                      describe your previous position in a way that’s easy for
+                      readers to scan quickly.</span
+                    >
+                  </div>
+                  <div class="personal-info-edu-card">
+                    <h3 class="personal-info-edu-card-name">
+                      NYC School of Marketing and Advertising
+                    </h3>
+                    <span class="personal-info-edu-card-period"
+                      >2007 - 2020</span
+                    >
+                    <span class="personal-info-edu-card-desc"
+                      >This is a description of your work experience. Concisely
+                      describe your previous position in a way that’s easy for
+                      readers to scan quickly.</span
+                    >
+                  </div>
                 </div>
-                <div class="personal-info-edu-card">
-                  <h3 class="personal-info-edu-card-">
-                    Business Administration @BizzNizz.net
-                  </h3>
-                  <span class="personal-info-edu-card-period">2007 - 2020</span>
-                  <span class="personal-info-edu-card-desc"
-                    >This is a description of your work experience. Concisely
-                    describe your previous position in a way that’s easy for
-                    readers to scan quickly.</span
-                  >
+              </li>
+
+              <li class="carousel-cards" id="personal-info-eduexp">
+                <h2 class="personal-info-cards-title">EXPERIENCE</h2>
+                <div class="personal-info-eduexp-cards-group">
+                  <div class="personal-info-eduexp-card">
+                    <h3 class="personal-info-eduexp-card-name">
+                      Budget Director
+                      <span class="personal-info-eduexp-card-workplace"
+                        >@Wix.com</span
+                      >
+                    </h3>
+                    <span class="personal-info-eduexp-card-period"
+                      >2014 - Current</span
+                    >
+                    <span class="personal-info-eduexp-card-desc"
+                      >This is a description of your work experience. Concisely
+                      describe your previous position in a way that’s easy for
+                      readers to scan quickly.</span
+                    >
+                  </div>
+                  <div class="personal-info-edu-card">
+                    <h3 class="personal-info-edu-card-name">
+                      Business Administration<span
+                        class="personal-info-eduexp-card-workplace"
+                        >@BizzNizz.net</span
+                      >
+                    </h3>
+                    <span class="personal-info-edu-card-period"
+                      >2007 - 2020</span
+                    >
+                    <span class="personal-info-edu-card-desc"
+                      >This is a description of your work experience. Concisely
+                      describe your previous position in a way that’s easy for
+                      readers to scan quickly.</span
+                    >
+                  </div>
                 </div>
-              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="banner3" class="banner3-wrapper">
+        <div id="banner3-skills">
+          <h2 class="skill-title">SKILLS</h2>
+          <ul class="skills-item-list">
+            <li class="skill-item">
+              <div class="skill-item-title"><span>Microsoft Excel</span></div>
+              <div class="skill-item-level"><span>Advanced</span></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-item-title"><span>Power point</span></div>
+              <div class="skill-item-level"><span>Proficient</span></div>
             </li>
           </ul>
+        </div>
+      </div>
+
+      <div id="banner4" class="banner4-wrapper">
+        <div id="banner4-qck-id">
+          <h2 class="qck-id-title">QUICK ID</h2>
+          <div class="qck-id-list">
+            <p class="qck-id-item">
+              <b class="qck-id-title">Phone</b>
+              <span class="qck-id-content">123-456-7890</span>
+            </p>
+            <p class="qck-id-item">
+              <b class="qck-id-title">Email</b>
+              <span class="qck-id-content">info@mysite.com</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer" class="footer-wrapper">
+        <div id="footer-cp-right">
+          <span>© 2023 by John Roberts. Proudly created with Wix.com</span>
+        </div>
+        <div id="footer-links">
+          <div class="social-media-btn-group">
+            <img class="social-media-btn" src="" alt="linkedin" />
+            <img class="social-media-btn" src="" alt="twitter" />
+            <img class="social-media-btn" src="" alt="facebook" />
+          </div>
+          <div class="footer-link-title">
+            <span>Follow me on social netwroks</span>
+          </div>
         </div>
       </div>
     </div>
