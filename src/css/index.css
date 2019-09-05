@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#headerDiv {
+  position: relative;
+  height: 620px;
+  width: 100%;
+  background: aqua;
+  border-top-color: darkmagenta;
+  border-top-width: 5px;
+  border-top-style: solid;
+}
+
+#headerButton {
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  width: 308px;
+  height: 40px;
+  position: fixed;
+  top: 40px;
+}
+
+#name {
+  position: absolute;
+  top: 295px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#title {
+  position: absolute;
+  top: 398px;
+
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#details {
+  background-color: bisque;
+  height: 640px;
+  width: 100%;
+}
+
+#skillDiv {
+  position: relative;
+  height: 707px;
+  width: 100%;
+}
+
+#skillBox {
+  position: absolute;
+  left: 50%;
+  top: 120px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#mark {
+  height: 88px;
+}
+
+#skills {
+  width: 940px;
+  height: 430px;
+  background-color: grey;
+  position: relative;
+}
+
+#excel {
+  width: 145px;
+  height: 145px;
+  background-color: red;
+  float: left;
+  display: inline-block;
+}
+
+#word {
+  width: 145px;
+  height: 145px;
+  background-color: orange;
+  float: left;
+  display: inline-block;
+}
+
+#adobe {
+  width: 215px;
+  height: 215px;
+  background-color: yellow;
+  display: inline-block;
+}
+
+#ppt {
+  width: 290px;
+  height: 285px;
+  background-color: green;
+  display: inline-block;
+  position: absolute;
+  top: 145px;
+  left: 0;
+}
+
+#french {
+  width: 215px;
+  height: 215px;
+  background-color: deepskyblue;
+  display: inline-block;
+  position: absolute;
+  top: 215px;
+  left: 290px;
+}
+
+#spanish {
+  width: 435px;
+  height: 430px;
+  background-color: darkmagenta;
+  float: right;
+  display: inline-block;
+}
+
+#QuickContactMe {
+  width: 100%;
+  height: 520px;
+  background-color: darkgoldenrod;
+}
+
+#quickIdDiv {
+  position: absolute;
+  right: 160px;
+  top: 75px;
+}
+
+#quickId {
+  background-color: red;
+  float: left;
+  width: 50%;
+  height: 520px;
+  position: relative;
+}
+
+.tdLeft {
+  padding-right: 55px;
+}
+
+#contactMe {
+  background-color: yellowgreen;
+  float: right;
+  width: 50%;
+  height: 520px;
+}
+
+#footer {
+  width: 100%;
+  height: 210px;
+  background-color: indianred;
+}
