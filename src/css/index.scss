@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  font-family: 'montserrat', sans-serif;
+  background: #2980b9;
+}
+
+.header {
+  width: 100%;
+  padding: 0 auto;
+  height: 100%;
+}
+
+.header a:nth-child(1) {
+  position: relative;
+  left: 0;
+  max-width: 50%;
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+  margin: 0 25px;
+}
+
+.header a:nth-child(2) {
+  display: flex;
+  margin: 0 25px;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 50%;
+  right: 0;
+  float: right;
+  text-decoration: none;
+  border: 1px solid red;
+  font-size: 18px;
+  padding: 4px 25px;
+  color: #fff;
+}
+
+.header a:nth-child(2):hover {
+  background: #ff7675;
+}
+
+.head {
+  width: 100%;
+  position: relative;
+}
+
+.head h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+.head h2 {
+  text-align: center;
+  color: #ddd;
+}
+
+.slider-section {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  color: #ddd;
+}
+
+.slider .top {
+  width: 100%;
+}
+
+.slider .title {
+  max-width: 50%;
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.slider .media {
+  max-width: 50%;
+  position: relative;
+  margin: 0;
+  right: 0;
+  float: right;
+  line-height: 70px;
+  margin: 0 20px;
+}
+
+.slider .media_unique {
+  max-width: 50%;
+  position: relative;
+  margin: 0;
+  right: 0;
+  float: right;
+  line-height: 70px;
+  margin: 0 30px;
+}
+
+.media_unique a {
+  text-decoration: none;
+  color: #ddd;
+  padding: 0 8px;
+  font-size: 20px;
+}
+.media a {
+  text-decoration: none;
+  color: #ddd;
+  padding: 10px 20px;
+  border: 1px solid red;
+}
+
+.media a:hover {
+  background: #ff7675;
+}
+
+.bottom .bottom-content {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.bottom-content .intro {
+  max-width: 50%;
+  width: auto;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.bottom-content .experience {
+  max-width: 33.3%;
+  width: auto;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.experience a {
+  text-decoration: none;
+  color: #ddd;
+}
+.bottom-content .education {
+  max-width: 33.3%;
+  width: auto;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.bottom-content .hobbies {
+  max-width: 100%;
+  width: 100px;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  margin: 15px 20px 0;
+  cursor: pointer;
+}
+
+.hobbies i {
+  font-size: 50px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.hobbies p {
+  font-size: 20px;
+  text-align: center;
+}
+
+//unfinished
+/*
+.skills {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    color:#ddd;
+    padding:0 20px;
+}
+
+
+.skill {
+    margin:0 20px;
+    max-width: 33.3%;
+    position: relative;
+    width:auto;
+    height:auto;
+    display: inline-block;
+}
+
+.contacts {
+    max-width: 1000px;
+    margin:auto;
+    color:#ddd;
+    padding:0 20px;
+    position: relative;
+    display:flex;
+}
+
+.contacts .id-section {
+    max-width:50%;
+    position: relative;
+    width:50%;
+    height:auto;
+    display: inline-block;
+}
+
+.contacts .contact_me {
+    max-width:50%;
+    width:50%;
+    position: relative;
+    width:auto;
+    height:auto;
+    display: inline-block;
+}
+
+.contact_me input[type=text]:nth-child(1) {
+    width:50%;
+    font-size: 20px;
+    border:none;
+    border-bottom: 1px solid black;
+}
+
+.contact_me input[type=text]:nth-child(2) {
+    width:50%;
+    font-size: 20px;
+    border:none;
+    border-bottom: 1px solid black;
+}
+*/
