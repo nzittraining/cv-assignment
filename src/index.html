@@ -234,7 +234,7 @@
       </section>
 
       <!-- Information -->
-      <div>
+      <!-- <div id="quick-id">
         <section>
           <h2>QUICK ID</h2>
           <ul>
@@ -257,7 +257,85 @@
 
         <section>
           <h2>CONTACT ME</h2>
-          <!-- Form Related Content for Lesson 2 -->
+        </section>
+      </div> -->
+
+      <div id="quick-id">
+        <section>
+          <h2>QUICK ID</h2>
+          <table border="1">
+            <tr>
+              <td><b>Phone</b></td>
+              <td>123-456-7890</td>
+            </tr>
+            <tr>
+              <td><b>Email</b></td>
+              <td><a href="mailto:info@mysite.com">info@mysite.com</a></td>
+            </tr>
+            <tr>
+              <td><b>Website</b></td>
+              <td>
+                <a href="http://www.wix.com" target="_blank">www.wix.com</a>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Address</b></td>
+              <td>
+                <address>
+                  500 Terry Francois Street San Francisco, CA 94158
+                </address>
+              </td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h2>CONTACT ME</h2>
+          <div
+            data-border-width="7"
+            style="transform-origin:center 3.5px; width:52px; height:7px"
+          ></div>
+          <form action="" method="post">
+            <fieldset>
+              <div>
+                <!-- <label for="name">Name</label> -->
+                <input
+                  id="name"
+                  name="name"
+                  placeholder="name"
+                  type="text"
+                  value=""
+                />
+                <!-- <label for="email">Email</label> -->
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="email"
+                  value=""
+                />
+              </div>
+              <div>
+                <!-- <label for="subject">subject</label> -->
+                <input
+                  id="subject"
+                  name="subject"
+                  placeholder="subject"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div>
+                <!-- <label>Message</label> -->
+                <textarea cols="20" rows="3" placeholder="message"></textarea>
+              </div>
+              <div>
+                <button role="button">
+                  <span>Submit</span>
+                </button>
+              </div>
+            </fieldset>
+          </form>
         </section>
       </div>
     </main>
