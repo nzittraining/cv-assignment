@@ -7,6 +7,9 @@ $btn_hover_color: #ff7675;
   box-sizing: border-box;
   font-family: 'montserrat', sans-serif;
   background: #2980b9;
+  .slider {
+    display: none;
+  }
 }
 
 .header {
@@ -124,7 +127,7 @@ $btn_hover_color: #ff7675;
       height: auto;
       position: relative;
       display: inline-block;
-      margin: 0 20px;
+      margin: 0 20px 20px;
     }
     .experience {
       max-width: 33.3%;
@@ -147,7 +150,7 @@ $btn_hover_color: #ff7675;
       margin: 0 20px;
     }
     .hobbies {
-      max-width: 100%;
+      max-width: 15%;
       width: 100px;
       height: auto;
       position: relative;
@@ -164,6 +167,26 @@ $btn_hover_color: #ff7675;
         text-align: center;
       }
     }
+  }
+}
+
+.dot-sections {
+  text-align: center;
+  margin-top: 20px;
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot:hover {
+    background-color: $btn_hover_color;
+  }
+  .active {
+    background: $btn_hover_color;
   }
 }
 
@@ -221,6 +244,7 @@ $btn_hover_color: #ff7675;
       color: $secondary_color;
     }
   }
+
   .contact-me-section {
     max-width: 50%;
     position: relative;
@@ -245,7 +269,7 @@ $btn_hover_color: #ff7675;
         border-bottom: 1px solid black;
       }
       input[type='text']:nth-child(3) {
-        width: 100%;
+        width: 99%;
         border: none;
         border-bottom: 1px solid black;
         font-size: 16px;
@@ -253,15 +277,21 @@ $btn_hover_color: #ff7675;
       input:hover {
         background: $secondary_color;
       }
+      input:focus {
+        background: $secondary_color;
+      }
       textarea {
         border: none;
         border-bottom: 1px solid black;
-        width: 100%;
+        width: 99%;
         padding: 10px 10px;
         height: 80px;
         font-size: 16px;
       }
       textarea:hover {
+        background: $secondary_color;
+      }
+      textarea:focus {
         background: $secondary_color;
       }
       .btn_contact_submit {
@@ -328,6 +358,9 @@ $btn_hover_color: #ff7675;
       text-decoration: none;
       color: $secondary_color;
       padding: 10px 10px;
+    }
+    a:hover {
+      color: $btn_hover_color;
     }
     p {
       font-size: 13px;

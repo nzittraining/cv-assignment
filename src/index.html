@@ -15,8 +15,8 @@
   <body>
     <!-- Header Section-->
     <div class="header">
-      <a href="./index.html">Home</a>
-      <a href="">DOWNLOAD MY FULL RESUME</a>
+      <a href="/">Home</a>
+      <a href="/">DOWNLOAD MY FULL RESUME</a>
     </div>
 
     <!-- Head Section-->
@@ -67,7 +67,7 @@
             <h2>EXPERIENCE</h2>
           </div>
           <div class="media">
-            <a href="">DOWNLOAD MY FULL RESUME</a>
+            <a href="/">DOWNLOAD MY FULL RESUME</a>
           </div>
         </div>
         <div class="bottom">
@@ -75,7 +75,7 @@
             <div class="experience">
               <h3>Budget Director</h3>
               <h3><a href="" target="_blank">@Wix.com</a></h3>
-              <h4>2014-Current</h4>
+              <h4>2014 - Current</h4>
               <p>
                 This is a description of your work experience. Concisely
                 describe your previous position in a way that’s easy for readers
@@ -85,7 +85,7 @@
             <div class="experience">
               <h3>Budget Director</h3>
               <h3><a href="" target="_blank">@BizzNizz.net</a></h3>
-              <h4>2010-2013</h4>
+              <h4>2010 - 2013</h4>
               <p>
                 This is a description of your work experience. Concisely
                 describe your previous position in a way that’s easy for readers
@@ -95,7 +95,7 @@
             <div class="experience">
               <h3>Finance Director</h3>
               <h3><a href="" target="_blank">@Computers & More LTD.</a></h3>
-              <h4>2008-2012</h4>
+              <h4>2008 - 2012</h4>
               <p>
                 This is a description of your work experience. Concisely
                 describe your previous position in a way that’s easy for readers
@@ -120,7 +120,7 @@
           <div class="bottom-content">
             <div class="education">
               <h3>The San Francisco Business School</h3>
-              <h4>2010-2012</h4>
+              <h4>2010 - 2012</h4>
               <p>
                 This is a description of your education. Concisely describe your
                 certifiate, degree or course in a way that’s easy for readers to
@@ -129,7 +129,7 @@
             </div>
             <div class="education">
               <h3>NYC School Of Marketing and Advertising</h3>
-              <h4>2007-2010</h4>
+              <h4>2007 - 2010</h4>
               <p>
                 This is a description of your education. Concisely describe your
                 certifiate, degree or course in a way that’s easy for readers to
@@ -138,7 +138,7 @@
             </div>
             <div class="education">
               <h3>L.A. University of Applied Science</h3>
-              <h4>2002-2006</h4>
+              <h4>2002 - 2006</h4>
               <p>
                 This is a description of your education. Concisely describe your
                 certifiate, degree or course in a way that’s easy for readers to
@@ -191,6 +191,12 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="dot-sections">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </div>
     </div>
 
@@ -289,6 +295,34 @@
       </div>
     </div>
     <div id="main"></div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        const slides = document.getElementsByClassName('slider');
+        const dots = document.getElementsByClassName('dot');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+      }
+    </script>
     <script src="./js/index.js"></script>
   </body>
 </html>
