@@ -1,0 +1,284 @@
+/*************
+ *   VARS    *
+ *************/
+
+$font-family-base: Helvetica, sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1;
+
+// Theme colors
+$cyan: #bbc8dd;
+$gray: #070a0e;
+$white: #ffffff;
+$navy: #2e4975;
+$red: #df3143;
+
+$color-map: (
+  theme-cyan: $cyan,
+  theme-navy: $navy,
+  theme-white: $white,
+  theme-gray: $gray,
+  theme-red: $red
+);
+
+/*****************
+ *   FUNCTIONS   *
+ *****************/
+
+// Generate list of background
+// and text color classes
+// based on $color-map keys
+@each $name, $color in $color-map {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+/*************
+ *   MIXIN   *
+ *************/
+
+// CSS transition
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+
+// Form input placeholder styles
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+/**************
+ *   RESETS   *
+ **************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/************
+ *  UTILS   *
+ ************/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.d-block {
+  display: block;
+  width: 100%;
+}
+
+/*************
+ *   TYPES   *
+ *************/
+
+body {
+  margin: 0;
+  font-family: $font-family-base;
+  font-size: $base-font-size;
+  font-weight: normal;
+  line-height: $base-line-height;
+  color: $gray;
+  text-align: left;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
+}
+
+h2 {
+  font-size: 2.375rem;
+  letter-spacing: 3.8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 0 40px 0;
+}
+
+.title-divider {
+  &:after {
+    margin-top: 20px;
+    content: '';
+    display: block;
+    width: 56px;
+    height: 7px;
+    background-color: $white;
+  }
+
+  &.title-divider-red {
+    &:after {
+      background-color: $red;
+    }
+  }
+}
+
+/*****************
+ *   BOX MODEL   *
+ *****************/
+
+.block-center {
+  width: 520px;
+  margin: 0 auto;
+}
+
+.page-section {
+  padding: 70px 45px;
+}
+
+.two-column {
+  @include flexbox();
+  @include justify-content(space-between);
+}
+
+/*************
+ *   TABLE   *
+ *************/
+
+table {
+  font-size: 1.0625rem;
+  border: 0;
+}
+
+th,
+td {
+  border: 0;
+  padding: 8px 0;
+}
+
+th {
+  font-weight: bold;
+  width: 120px;
+}
+
+/*************
+ *   FORM   *
+ *************/
+
+input[type='text'],
+input[type='email'],
+textarea {
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom-color: $navy;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  color: $navy;
+  padding: 10px 13px;
+  background-color: transparent;
+  resize: none;
+  @include transition(all 0.2s);
+  @include placeholder {
+    color: $navy;
+    opacity: 0.7;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $navy;
+    @include placeholder {
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+textarea {
+  min-height: 86px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.form-action {
+  margin-top: 15px;
+}
+
+.button-link {
+  border: 0;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  @include transition(color 0.2s);
+
+  &:hover {
+    color: #9ba9bf;
+  }
+}
+
+input[name='name'],
+input[name='email'] {
+  width: 195px;
+}

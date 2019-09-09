@@ -235,30 +235,91 @@
 
       <!-- Information -->
       <div>
-        <section>
-          <h2>QUICK ID</h2>
-          <ul>
-            <li><b>Phone</b><a href="tel:123-456-7890">123-456-7890</a></li>
-            <li>
-              <b>Email</b><a href="mailto:info@mysite.com">info@mysite.com</a>
-            </li>
-            <li>
-              <b>Website</b
-              ><a href="http://www.wix.com" target="_blank">www.wix.com</a>
-            </li>
-            <li>
-              <b>Address</b>
-              <address>
-                500 Terry Francois Street San Francisco, CA 94158
-              </address>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>CONTACT ME</h2>
-          <!-- Form Related Content for Lesson 2 -->
-        </section>
+        <div class="bg-theme-navy">
+          <section class="block-center text-theme-white page-section">
+            <h2 class="title-divider title-divider-red">Quick ID</h2>
+            <table>
+              <tr>
+                <th>Phone</th>
+                <td>123-456-7890</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td><a href="mailto:info@mysite.com">info@mysite.com</a></td>
+              </tr>
+              <tr>
+                <th>Website</th>
+                <td>
+                  <a href="https://www.wix.com" target="_blank">www.wix.com</a>
+                </td>
+              </tr>
+              <tr>
+                <th>Address</th>
+                <td>500 Terry Francois Street</td>
+              </tr>
+              <tr>
+                <th>&nbsp;</th>
+                <td>San Francisco, CA 94158</td>
+              </tr>
+            </table>
+          </section>
+        </div>
+        <div class="bg-theme-cyan">
+          <section class="block-center text-theme-grey page-section">
+            <h2 class="title-divider title-divider-red">CONTACT ME</h2>
+            <form action="/example.html" method="post">
+              <div class="two-column">
+                <div class="form-group">
+                  <label class="sr-only" for="name">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    value=""
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value=""
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="subject">Subject</label>
+                <input
+                  id="subject"
+                  class="d-block"
+                  name="subject"
+                  type="text"
+                  value=""
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="message">Message</label>
+                <textarea
+                  id="message"
+                  class="d-block"
+                  name="message"
+                  cols="30"
+                  rows="5"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="form-action">
+                <button class="button-link text-theme-white" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
       </div>
     </main>
 
