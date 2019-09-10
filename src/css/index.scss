@@ -1,0 +1,53 @@
+.a {
+  text-decoration: none;
+}
+
+.bui-icon,
+address,
+cite,
+dfn,
+em,
+i,
+var {
+  font-style: normal;
+}
+
+.table {
+  border: 0;
+  table-layout: fixed;
+  max-width: 50%;
+}
+
+.td {
+  max-width: 50%;
+}
+
+.fieldset {
+  border: 0px;
+}
+
+.id-container {
+  overflow: hidden;
+  width: 100%;
+  min-width: 980px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.id-child {
+  flex: 1;
+}
+
+.id1 {
+  background-color: rgb(46, 73, 117);
+  color: white;
+}
+
+.id2 {
+  background-color: rgb(187, 200, 221);
+}
+
+.id-container a {
+  color: white;
+}
