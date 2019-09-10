@@ -13,6 +13,7 @@
   </head>
 
   <body>
+    <div class="bgimg"></div>
     <!-- Header Section-->
     <div class="header">
       <a href="/">Home</a>
@@ -23,13 +24,16 @@
     <div class="head">
       <h1>John Roberts</h1>
       <h2>BUSINESS EXPERT</h2>
-      <img src="" alt="" />
+      <img
+        src="https://static.wixstatic.com/media/86f442ff0674441faadc2994b1b33e77.jpg/v1/crop/x_130,y_160,w_1320,h_1311/fill/w_248,h_244,al_c,q_80,usm_0.66_1.00_0.01/86f442ff0674441faadc2994b1b33e77.webp"
+        alt="John Roberts"
+      />
     </div>
 
     <!-- Slider show-->
     <div class="slider-section">
       <!-- AboutMe Slider-->
-      <div class="slider">
+      <div class="slider fade">
         <div class="top">
           <div class="title">
             <h2>ABOUT ME</h2>
@@ -61,7 +65,7 @@
       </div>
 
       <!-- Experience Slider-->
-      <div class="slider">
+      <div class="slider fade">
         <div class="top">
           <div class="title">
             <h2>EXPERIENCE</h2>
@@ -107,7 +111,7 @@
       </div>
 
       <!-- Education Slider-->
-      <div class="slider">
+      <div class="slider fade">
         <div class="top">
           <div class="title">
             <h2>EDUCATION</h2>
@@ -150,7 +154,7 @@
       </div>
 
       <!-- Hobbies & Interests Slider-->
-      <div class="slider">
+      <div class="slider fade">
         <div class="top">
           <div class="title">
             <h2>HOBBIES & INTERESTS</h2>
@@ -298,9 +302,33 @@
     <script>
       var slideIndex = 1;
       showSlides(slideIndex);
+      carousel();
 
       function currentSlide(n) {
         showSlides((slideIndex = n));
+      }
+
+      function slide(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function carousel() {
+        let i;
+        const x = document.getElementsByClassName('slider');
+        const dots = document.getElementsByClassName('dot');
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+          slideIndex = 1;
+        }
+        x[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+        setTimeout(carousel, 10000);
       }
 
       function showSlides(n) {

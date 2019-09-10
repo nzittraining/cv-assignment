@@ -6,10 +6,25 @@ $btn_hover_color: #ff7675;
 * {
   box-sizing: border-box;
   font-family: 'montserrat', sans-serif;
-  background: #2980b9;
+  background: transparent;
   .slider {
     display: none;
   }
+}
+
+.bgimg {
+  background: url('../css/img/cv.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(5px);
 }
 
 .header {
@@ -26,6 +41,7 @@ $btn_hover_color: #ff7675;
     font-size: 24px;
     color: $secondary_color;
     margin: 0 25px;
+    font-weight: bold;
   }
   a:nth-child(2) {
     display: flex;
@@ -49,8 +65,8 @@ $btn_hover_color: #ff7675;
 .head {
   width: 100%;
   position: relative;
+  text-align: center;
   h1 {
-    text-align: center;
     font-size: 50px;
     color: $secondary_color;
   }
@@ -58,6 +74,13 @@ $btn_hover_color: #ff7675;
   h2 {
     text-align: center;
     color: $primary_color;
+  }
+  img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    padding: 10px;
+    background: $secondary_color;
   }
 }
 
@@ -187,6 +210,32 @@ $btn_hover_color: #ff7675;
   }
   .active {
     background: $btn_hover_color;
+  }
+}
+
+//fade animation
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
 
