@@ -234,30 +234,56 @@
       </section>
 
       <!-- Information -->
-      <div>
-        <section>
-          <h2>QUICK ID</h2>
-          <ul>
-            <li><b>Phone</b><a href="tel:123-456-7890">123-456-7890</a></li>
-            <li>
-              <b>Email</b><a href="mailto:info@mysite.com">info@mysite.com</a>
-            </li>
-            <li>
-              <b>Website</b
-              ><a href="http://www.wix.com" target="_blank">www.wix.com</a>
-            </li>
-            <li>
-              <b>Address</b>
-              <address>
-                500 Terry Francois Street San Francisco, CA 94158
-              </address>
-            </li>
-          </ul>
-        </section>
+      <div id="banner_information">
+        <section id="banner_information_quick_id">
+          <h2 class="banner_title">QUICK ID</h2>
+          <table id="banner_information_quick_id_tb">
+            <tr>
+              <td class="quick_id_tb_label"><b>Phone</b></td>
+              <td class="quick_id_tb_content">
+                <a href="tel:123-456-7890">123-456-7890</a>
+              </td>
+            </tr>
 
-        <section>
-          <h2>CONTACT ME</h2>
-          <!-- Form Related Content for Lesson 2 -->
+            <tr></tr>
+            <tr>
+              <td class="quick_id_tb_label"><b>Email</b></td>
+              <td class="quick_id_tb_content">
+                <a href="mailto:info@mysite.com">info@mysite.com</a>
+              </td>
+            </tr>
+
+            <tr></tr>
+            <tr>
+              <td class="quick_id_tb_label"><b>Website</b></td>
+              <td class="quick_id_tb_content">
+                <a href="http://www.wix.com" target="_blank">www.wix.com</a>
+              </td>
+            </tr>
+
+            <tr></tr>
+            <tr>
+              <td class="quick_id_tb_label"><b>Address</b></td>
+              <td class="quick_id_tb_content">
+                <address>
+                  500 Terry Francois Street San Francisco, CA 94158
+                </address>
+              </td>
+            </tr>
+
+            <tr></tr>
+          </table>
+        </section>
+        <!--
+        -->
+        <section id="banner_information_contact_me">
+          <h2 id="contact_me_title" class="banner_title">CONTACT ME</h2>
+          <form id="contact_me_form" action="/" method="post">
+            <input placeholder="Name" />
+            <input placeholder="Email" type="email" />
+            <input placeholder="Subject" />
+            <textarea placeholder="Message"></textarea>
+          </form>
         </section>
       </div>
     </main>
