@@ -1,0 +1,145 @@
+html {
+  font-family: sans-serif;
+}
+ul li {
+  list-style: none;
+}
+
+.getInTouch {
+  height: 500px;
+  font-size: 20px;
+  background-color: #2b4975;
+}
+.getInTouch_QuickID {
+  padding-top: 30px;
+  background-color: #2b4975;
+  float: left;
+  color: white;
+  height: 486px;
+  padding-left: 150px;
+  max-width: 475px;
+}
+table {
+  font-size: 18px;
+}
+td {
+  padding-right: 80px;
+  padding-bottom: 15px;
+  vertical-align: top;
+}
+.thead {
+  font-weight: bold;
+}
+
+getInTouch_contactMe {
+  float: left;
+}
+.contact_heading {
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+.contact_heading::after {
+  content: '';
+  width: 50px;
+  border: 3px solid red;
+  display: block;
+}
+
+.getInTouch_contactMe {
+  background-color: rgb(214, 225, 245);
+  margin-left: 50%;
+  padding-left: 100px;
+  padding-top: 30px;
+  height: 486px;
+}
+.getInTouch_contactMe input {
+  height: 30px;
+  width: 195px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px black solid;
+}
+#subject {
+  width: 400px;
+}
+.contactName {
+  display: inline-block;
+}
+
+.contactEmail {
+  display: inline-block;
+}
+
+.getInTouch_contactMe textarea {
+  resize: none;
+  width: 400px;
+  height: 80px;
+  background-color: transparent;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px black solid;
+}
+.getInTouch_contactMe input:hover {
+  background-color: white;
+  border: 1px black solid;
+  outline: none;
+}
+.getInTouch_contactMe textarea:hover {
+  background-color: white;
+  border: 1px black solid;
+  outline: none;
+}
+#submitButton {
+  margin-top: 10px;
+  margin-left: 100px;
+  background-color: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+#submitButton:hover {
+  color: grey;
+  background-color: transparent;
+}
+footer {
+  background-color: #ecf2f9;
+}
+.resume {
+  float: left;
+  width: 50%;
+}
+a {
+  text-decoration: none;
+}
+
+.downloadCV {
+  margin-top: 20px;
+  margin-left: 120px;
+  background-color: none;
+  font-size: 24px;
+  border: 1px solid black;
+}
+a {
+  color: black;
+}
+
+button {
+  all: unset;
+  padding: 10px;
+}
+
+.resume p {
+  text-align: center;
+}
+
+.resume a:active {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
