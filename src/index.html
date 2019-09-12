@@ -10,14 +10,18 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="bgimg"></div>
     <!-- Header Section-->
     <div class="header">
-      <a href="/">Home</a>
-      <a href="/">DOWNLOAD MY FULL RESUME</a>
+      <a href="/" id="home">Home</a>
+      <a href="/" id="download">DOWNLOAD MY FULL RESUME</a>
     </div>
 
     <!-- Head Section-->
@@ -39,9 +43,9 @@
             <h2>ABOUT ME</h2>
           </div>
           <div class="media_unique">
-            <a href=""><i class="fab fa-linkedin-in"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="icon-lk" href=""><i class="fab fa-linkedin-in"></i></a>
+            <a class="icon-twt" href=""><i class="fab fa-twitter"></i></a>
+            <a class="icon-fb" href=""><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
         <div class="bottom">
@@ -71,7 +75,7 @@
             <h2>EXPERIENCE</h2>
           </div>
           <div class="media">
-            <a href="/">DOWNLOAD MY FULL RESUME</a>
+            <a href="/" class="media-download">DOWNLOAD MY FULL RESUME</a>
           </div>
         </div>
         <div class="bottom">
@@ -79,7 +83,7 @@
             <div class="experience">
               <h3>Budget Director</h3>
               <h3><a href="" target="_blank">@Wix.com</a></h3>
-              <h4>2014 - Current</h4>
+              <time>2014 - Current</time>
               <p>
                 This is a description of your work experience. Concisely
                 describe your previous position in a way that’s easy for readers
@@ -89,7 +93,7 @@
             <div class="experience">
               <h3>Budget Director</h3>
               <h3><a href="" target="_blank">@BizzNizz.net</a></h3>
-              <h4>2010 - 2013</h4>
+              <time>2010 - 2013</time>
               <p>
                 This is a description of your work experience. Concisely
                 describe your previous position in a way that’s easy for readers
@@ -99,7 +103,7 @@
             <div class="experience">
               <h3>Finance Director</h3>
               <h3><a href="" target="_blank">@Computers & More LTD.</a></h3>
-              <h4>2008 - 2012</h4>
+              <time>2008 - 2012</time>
               <p>
                 This is a description of your work experience. Concisely
                 describe your previous position in a way that’s easy for readers
@@ -117,14 +121,14 @@
             <h2>EDUCATION</h2>
           </div>
           <div class="media">
-            <a href="">DOWNLOAD MY FULL RESUME</a>
+            <a href="" class="media-download">DOWNLOAD MY FULL RESUME</a>
           </div>
         </div>
         <div class="bottom">
           <div class="bottom-content">
             <div class="education">
               <h3>The San Francisco Business School</h3>
-              <h4>2010 - 2012</h4>
+              <time>2010 - 2012</time>
               <p>
                 This is a description of your education. Concisely describe your
                 certifiate, degree or course in a way that’s easy for readers to
@@ -133,7 +137,7 @@
             </div>
             <div class="education">
               <h3>NYC School Of Marketing and Advertising</h3>
-              <h4>2007 - 2010</h4>
+              <time>2007 - 2010</time>
               <p>
                 This is a description of your education. Concisely describe your
                 certifiate, degree or course in a way that’s easy for readers to
@@ -142,7 +146,7 @@
             </div>
             <div class="education">
               <h3>L.A. University of Applied Science</h3>
-              <h4>2002 - 2006</h4>
+              <time>2002 - 2006</time>
               <p>
                 This is a description of your education. Concisely describe your
                 certifiate, degree or course in a way that’s easy for readers to
@@ -160,7 +164,7 @@
             <h2>HOBBIES & INTERESTS</h2>
           </div>
           <div class="media">
-            <a href="">DOWNLOAD MY FULL RESUME</a>
+            <a href="" class="media-download">DOWNLOAD MY FULL RESUME</a>
           </div>
         </div>
         <div class="bottom">
@@ -196,11 +200,13 @@
           </div>
         </div>
       </div>
-      <div class="dot-sections">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <div class="dot-sections">
+      <div class="dot-inner">
+        <span class="dot" onclick="currentSlider(1)"></span>
+        <span class="dot" onclick="currentSlider(2)"></span>
+        <span class="dot" onclick="currentSlider(3)"></span>
+        <span class="dot" onclick="currentSlider(4)"></span>
       </div>
     </div>
 
@@ -233,124 +239,78 @@
       </div>
     </div>
 
-    <!-- Contacts Section-->
     <div class="contacts-section">
-      <div class="id-section">
-        <div class="title">
-          <h2>QUICK ID</h2>
-        </div>
-        <div class="border"></div>
-        <div class="contact_details">
-          <table>
-            <tr>
-              <td>Phone</td>
-              <td>123-456-7890</td>
-            </tr>
-            <tr>
-              <td>Email</td>
-              <td><a href="mailto:info@mysite.com">info@mysite.com</a></td>
-            </tr>
-            <tr>
-              <td>Website</td>
-              <td><a href="" target="_blank">www.wix.com</a></td>
-            </tr>
-            <tr>
-              <td>Address</td>
-              <td>500 Terry Francois Street</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>San Francisco, CA 94158</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="contact-me-section">
-        <div class="title">
-          <h2>CONTACT ME</h2>
-        </div>
-        <div class="border"></div>
-        <div class="contact_me_inputs">
-          <form action="" targer="_blank" method="post">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Message"></textarea>
-            <button class="btn_contact_submit">Submit</button>
-          </form>
-        </div>
-      </div>
+      <section class="quick-id">
+        <h2>QUICK ID</h2>
+        <table>
+          <tr>
+            <th class="quick-id-label">Phone</th>
+            <th class="quick-id-content">123-456-7890</th>
+          </tr>
+          <tr>
+            <th class="quick-id-label">Email</th>
+            <th class="quick-id-content">
+              <a href="mailto:info@mysite.com">info@mysite.com</a>
+            </th>
+          </tr>
+          <tr>
+            <th class="quick-id-label">Website</th>
+            <th class="quick-id-content">
+              <a href="" target="_blank">www.wix.com</a>
+            </th>
+          </tr>
+          <tr>
+            <th class="quick-id-label">Address</th>
+            <th class="quick-id-content">
+              <address>
+                500 Terry Francois Street San Francisco, CA 94158
+              </address>
+            </th>
+          </tr>
+        </table>
+      </section>
+      <section class="contact-me">
+        <h2>CONTACT ME</h2>
+        <form id="contact-me-form" action="/" method="post">
+          <label for="name"
+            ><input id="name" type="text" name="name" placeholder="Name"
+          /></label>
+          <label for="email"
+            ><input id="email" type="email" name="email" placeholder="Email"
+          /></label>
+          <label for="subject"
+            ><input
+              id="subject"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+          /></label>
+          <label for="msg"
+            ><textarea id="msg" name="msg" placeholder="Message"></textarea
+          ></label>
+          <button class="btn_contact_submit">Submit</button>
+        </form>
+      </section>
     </div>
 
-    <div class="footer">
-      <div class="left">
-        <button class="btn_download">Download my resume</button>
-        <p>© 2023 by John Roberts. Proudly created with Wix.com</p>
-      </div>
-      <div class="right">
-        <div class="right_icons">
-          <a href="" targer="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="" targer="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="" targer="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="" targer="_blank"><i class="fab fa-google-plus-g"></i></a>
+    <footer>
+      <div class="inner-width">
+        <div class="left">
+          <button class="btn_download">Download my resume</button>
+          <p>© 2023 by John Roberts. Proudly created with Wix.com</p>
         </div>
-        <p>Follow me on social networks</p>
+        <div class="right">
+          <div class="right_icons">
+            <a href="" targer="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="" targer="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="" targer="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="" targer="_blank"><i class="fab fa-google-plus-g"></i></a>
+          </div>
+          <p>Follow me on social networks</p>
+        </div>
       </div>
-    </div>
+    </footer>
     <div id="main"></div>
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-      carousel();
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function slide(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function carousel() {
-        let i;
-        const x = document.getElementsByClassName('slider');
-        const dots = document.getElementsByClassName('dot');
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = 'none';
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(' active', '');
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {
-          slideIndex = 1;
-        }
-        x[slideIndex - 1].style.display = 'block';
-        dots[slideIndex - 1].className += ' active';
-        setTimeout(carousel, 10000);
-      }
-
-      function showSlides(n) {
-        var i;
-        const slides = document.getElementsByClassName('slider');
-        const dots = document.getElementsByClassName('dot');
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = 'none';
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(' active', '');
-        }
-        slides[slideIndex - 1].style.display = 'block';
-        dots[slideIndex - 1].className += ' active';
-      }
-    </script>
     <script src="./js/index.js"></script>
   </body>
 </html>
