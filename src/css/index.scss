@@ -1,0 +1,88 @@
+form,
+textarea,
+h2 {
+  border: 0;
+  font-style: Arial, sans-serif;
+}
+
+.quick_sect {
+  background-color: #314a74;
+  width: 35%;
+  height: 240px;
+  padding: 30px;
+  margin: 0px;
+}
+
+.quick_sect h2 {
+  color: white;
+}
+
+.qid_content {
+  font-weight: bold;
+  font-style: sans-serif;
+  width: 40%;
+  color: white;
+}
+
+.qid_content,
+#qid_address {
+  color: white;
+}
+
+.link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact_sect {
+  background-color: #bcc8dc;
+  width: 35%;
+  height: 240px;
+  padding: 30px;
+  margin: 0px;
+}
+
+input {
+  background-color: #bcc8dc;
+  font-style: sans-serif;
+}
+
+.process {
+  margin-bottom: 10px;
+  border: 1px solid #b7b7b8;
+  background: red;
+  width: 39px;
+  height: 7px;
+}
+
+#name,
+#email,
+#subject {
+  border-style: solid;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-radius: 0;
+}
+
+#message {
+  border-bottom: 1px solid black;
+  background-color: #bcc8dc;
+  line-height: 1;
+}
+
+.butt_sub {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  position: relative;
+  left: 120px;
+}
+
+button:hover {
+  color: #314a74;
+  text-decoration: none;
+}

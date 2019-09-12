@@ -7,6 +7,7 @@
     <title>John Roberts' CV</title>
     <link rel="stylesheet" href="./css/index.scss" />
   </head>
+
   <body>
     <header>
       <a href="/">HOME</a
@@ -234,30 +235,124 @@
       </section>
 
       <!-- Information -->
+      <!--  <div>
+          <section>
+            <h2>QUICK ID</h2>
+            <ul>
+              <li><b>Phone</b><a href="tel:123-456-7890">123-456-7890</a></li>
+              <li>
+                <b>Email</b><a href="mailto:info@mysite.com">info@mysite.com</a>
+              </li>
+              <li>
+                <b>Website</b><a href="http://www.wix.com" target="_blank">www.wix.com</a>
+              </li>
+              <li>
+                <b>Address</b>
+                <address>
+                  500 Terry Francois Street San Francisco, CA 94158
+                </address>
+              </li>
+            </ul>
+          </section> -->
       <div>
-        <section>
+        <section class="quick_sect">
           <h2>QUICK ID</h2>
-          <ul>
-            <li><b>Phone</b><a href="tel:123-456-7890">123-456-7890</a></li>
-            <li>
-              <b>Email</b><a href="mailto:info@mysite.com">info@mysite.com</a>
-            </li>
-            <li>
-              <b>Website</b
-              ><a href="http://www.wix.com" target="_blank">www.wix.com</a>
-            </li>
-            <li>
-              <b>Address</b>
-              <address>
-                500 Terry Francois Street San Francisco, CA 94158
-              </address>
-            </li>
-          </ul>
+          <div class="process"></div>
+
+          <table cellpadding="5px" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="qid_content">Phone</td>
+                <td>
+                  <a href="tel:123-456-7890" class="link">123-456-7890</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="qid_content">Email</td>
+                <td>
+                  <a href="mailto:info@mysite.com" class="link"
+                    >info@mysite.com</a
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td class="qid_content">Website</td>
+                <td>
+                  <a href="http://www.wix.com" target="_blank" class="link"
+                    >www.wix.com</a
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td class="qid_content">Address</td>
+                <td class="qid_address">
+                  500 Terry Francois Street
+                  <br />
+                  San Francisco, CA 94158
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
-        <section>
+        <section class="contact_sect">
           <h2>CONTACT ME</h2>
           <!-- Form Related Content for Lesson 2 -->
+
+          <div class="process"></div>
+
+          <div style="display: inline-block">
+            <!-- <label for="name">Name</label> -->
+            <input
+              id="name"
+              type="text"
+              name="name"
+              value=""
+              placeholder="FullName"
+            />
+          </div>
+
+          <div style="display: inline-block">
+            <!-- <label for="email">Email</label> -->
+            <input
+              id="email"
+              type="email"
+              name="email"
+              value=""
+              placeholder="Email"
+            />
+          </div>
+
+          <div style="display: inline-block">
+            <!-- <label for="subject">Subject</label> -->
+            <input
+              id="subject"
+              type="subject"
+              name="subject"
+              value=""
+              placeholder="Subject"
+              size="45"
+            />
+          </div>
+
+          <div>
+            <!-- <label for="message">Message</label> -->
+
+            <textarea
+              id="message"
+              class="inline-block"
+              name="message"
+              rows="3"
+              cols="42"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <div>
+            <button class="butt_sub" type="submit">Submit</button>
+          </div>
         </section>
       </div>
     </main>
