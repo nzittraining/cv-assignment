@@ -244,24 +244,18 @@
                 <a href="tel:123-456-7890">123-456-7890</a>
               </td>
             </tr>
-
-            <tr></tr>
             <tr>
               <td class="quick_id_tb_label"><b>Email</b></td>
               <td class="quick_id_tb_content">
                 <a href="mailto:info@mysite.com">info@mysite.com</a>
               </td>
             </tr>
-
-            <tr></tr>
             <tr>
               <td class="quick_id_tb_label"><b>Website</b></td>
               <td class="quick_id_tb_content">
                 <a href="http://www.wix.com" target="_blank">www.wix.com</a>
               </td>
             </tr>
-
-            <tr></tr>
             <tr>
               <td class="quick_id_tb_label"><b>Address</b></td>
               <td class="quick_id_tb_content">
@@ -270,20 +264,40 @@
                 </address>
               </td>
             </tr>
-
-            <tr></tr>
           </table>
         </section>
         <section id="banner_information_contact_me">
           <h2 id="contact_me_title" class="banner_title">CONTACT ME</h2>
           <form id="contact_me_form" action="/" method="post">
-            <input class="short_input left" placeholder="Name" /><input
+            <label for="contatct_me_form_name" class="form_label">name</label>
+            <input
+              id="contatct_me_form_name"
+              class="short_input left"
+              placeholder="Name"
+              name="name"
+            /><label for="contact_me_form_email" class="form_label">email</label
+            ><input
+              id="contact_me_form_email"
               class="short_input"
               placeholder="Email"
               type="email"
+              name="email"
             />
-            <input placeholder="Subject" />
-            <textarea rows="3" placeholder="Message"></textarea>
+            <label for="contact_me_form_subject" class="form_label"
+              >subject</label
+            >
+            <input
+              id="contact_me_form_subject"
+              placeholder="Subject"
+              name="subject"
+            />
+            <label for="contact_me_form_msg" class="form_label">message</label>
+            <textarea
+              id="contact_me_form_msg"
+              rows="3"
+              placeholder="Message"
+              name="message"
+            ></textarea>
             <div class="contact_me_btn_group">
               <button type="submit" class="submit_btn">Submit</button>
             </div>
