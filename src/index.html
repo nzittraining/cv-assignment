@@ -240,8 +240,8 @@
 
       <!-- Information -->
       <div class="getInTouch">
-        <section class="getInTouch_QuickID">
-          <h1 class="contact_heading">Quick ID</h1>
+        <section class="getInTouch-QuickID">
+          <h2 class="contact-heading">Quick ID</h2>
 
           <table>
             <tbody>
@@ -251,11 +251,13 @@
               </tr>
               <tr>
                 <td class="thead">Email</td>
-                <td>info@mysite.com</td>
+                <td><a href="mailto:info@mysite.com">info@mysite.com</a></td>
               </tr>
               <tr>
                 <td class="thead">Wesbite</td>
-                <td>www.wix.com</td>
+                <td>
+                  <a href="http://wix.com" target="_blank">www.wix.com</a>
+                </td>
               </tr>
               <tr>
                 <td class="thead">Address</td>
@@ -265,11 +267,12 @@
           </table>
         </section>
 
-        <section class="getInTouch_contactMe">
-          <h1 class="contact_heading">CONTACT ME</h1>
+        <section class="getInTouch-contactMe">
+          <h2 class="contact-heading contact-me">CONTACT ME</h2>
           <!-- Form Related Content for Lesson 2 -->
           <form action="" method="post">
-            <div class="contactName">
+            <div class="contact-Name">
+              <label for=" Name" class="sr-only">Name</label>
               <input
                 id="name"
                 name="name"
@@ -279,7 +282,8 @@
               />
             </div>
 
-            <div class="contactEmail">
+            <div class="contact-Email">
+              <label for="label" class="sr-only">Email</label>
               <input
                 id="email"
                 name="email"
@@ -289,6 +293,7 @@
               />
             </div>
             <div>
+              <label for="Subject" class="sr-only">Subject</label>
               <input
                 id="subject"
                 name="subject"
@@ -298,11 +303,13 @@
               />
             </div>
             <div>
+              <label for="message" class="sr-only"> Message </label>
               <textarea col="5" placeholder="Message"></textarea>
             </div>
             <div>
+              <label for="submit-button" class="sr-only"> Submit Button </label>
               <input
-                id="submitButton"
+                id="submit-Button"
                 name="submit"
                 type="button"
                 value="Submit"
@@ -315,7 +322,7 @@
 
     <footer>
       <div class="resume">
-        <button class="downloadCV">
+        <button class="download-CV">
           <a
             href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
             target="_blank"

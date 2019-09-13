@@ -1,23 +1,29 @@
 html {
   font-family: sans-serif;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+section,
+footer {
+  margin: 0;
+  padding: 1px;
+}
 ul li {
   list-style: none;
 }
-
-.getInTouch {
-  height: 500px;
-  font-size: 20px;
-  background-color: #2b4975;
-}
-.getInTouch_QuickID {
+.getInTouch-QuickID {
+  box-sizing: border-box;
   padding-top: 30px;
   background-color: #2b4975;
-  float: left;
+  display: inline-block;
   color: white;
-  height: 486px;
   padding-left: 150px;
-  max-width: 475px;
+  width: 50%;
+  height: 500px;
 }
 table {
   font-size: 18px;
@@ -27,73 +33,86 @@ td {
   padding-bottom: 15px;
   vertical-align: top;
 }
+
 .thead {
   font-weight: bold;
 }
 
-getInTouch_contactMe {
-  float: left;
-}
-.contact_heading {
+.contact-heading {
   padding-bottom: 20px;
   font-size: 50px;
 }
-.contact_heading::after {
+.contact-heading::after {
   content: '';
   width: 50px;
   border: 3px solid red;
   display: block;
 }
 
-.getInTouch_contactMe {
-  background-color: rgb(214, 225, 245);
-  margin-left: 50%;
-  padding-left: 100px;
+.getInTouch-contactMe {
+  box-sizing: border-box;
   padding-top: 30px;
-  height: 486px;
+  color: white;
+  padding-left: 150px;
+  height: 500px;
+  width: 50%;
+  float: right;
+  background-color: rgb(214, 225, 245);
 }
-.getInTouch_contactMe input {
+.getInTouch-contactMe input {
   height: 30px;
   width: 195px;
   margin-bottom: 20px;
   background-color: transparent;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom: 1px black solid;
+  border-width: 0 0 1px 0;
+  border-color: black;
 }
 #subject {
   width: 400px;
 }
-.contactName {
+.contact-Name {
   display: inline-block;
 }
 
-.contactEmail {
+.contact-Email {
   display: inline-block;
 }
+.contact-me {
+  color: black;
+}
 
-.getInTouch_contactMe textarea {
+.getInTouch-contactMe textarea {
   resize: none;
   width: 400px;
   height: 80px;
   background-color: transparent;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom: 1px black solid;
+  border-width: 0 0 1px 0;
+  border-color: black;
 }
-.getInTouch_contactMe input:hover {
+.getInTouch-contactMe input:hover {
   background-color: white;
   border: 1px black solid;
   outline: none;
 }
-.getInTouch_contactMe textarea:hover {
+.getInTouch a {
+  color: white;
+}
+.getInTouch-contactMe textarea:hover {
   background-color: white;
   border: 1px black solid;
   outline: none;
 }
-#submitButton {
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+#submit-Button {
   margin-top: 10px;
   margin-left: 100px;
   background-color: none;
@@ -102,7 +121,7 @@ getInTouch_contactMe {
   color: white;
 }
 
-#submitButton:hover {
+#submit-Button:hover {
   color: grey;
   background-color: transparent;
 }
@@ -117,9 +136,9 @@ a {
   text-decoration: none;
 }
 
-.downloadCV {
+.download-CV {
   margin-top: 20px;
-  margin-left: 120px;
+  margin-left: 290px;
   background-color: none;
   font-size: 24px;
   border: 1px solid black;
