@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+section,
+footer {
+  margin: 0;
+  padding: 1px;
+}
+ul li {
+  list-style: none;
+}
+
+.getInTouch-QuickID {
+  box-sizing: border-box;
+  padding-top: 30px;
+  background-color: #2b4975;
+  display: inline-block;
+  color: white;
+  padding-left: 150px;
+  width: 50%;
+  height: 500px;
+}
+
+td {
+  padding-right: 80px;
+  padding-bottom: 15px;
+  vertical-align: top;
+}
+
+.thead {
+  font-weight: bold;
+}
+
+.contact-heading {
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+.contact-heading::after {
+  content: '';
+  width: 50px;
+  border: 3px solid red;
+  display: block;
+}
+
+.getInTouch-contactMe {
+  box-sizing: border-box;
+  padding-top: 30px;
+  color: white;
+  padding-left: 150px;
+  height: 500px;
+  width: 50%;
+  float: right;
+  background-color: rgb(214, 225, 245);
+}
+.getInTouch-contactMe input {
+  height: 30px;
+  width: 195px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-width: 0 0 1px 0;
+  border-color: black;
+}
+#subject {
+  width: 400px;
+}
+.contact-Name {
+  display: inline-block;
+}
+
+.contact-Email {
+  display: inline-block;
+}
+.contact-me {
+  color: black;
+}
+
+.getInTouch-contactMe textarea {
+  resize: none;
+  width: 400px;
+  height: 80px;
+  background-color: transparent;
+  border-width: 0 0 1px 0;
+  border-color: black;
+}
+.getInTouch-contactMe input:hover {
+  background-color: white;
+  border: 1px black solid;
+  outline: none;
+}
+.getInTouch a {
+  color: white;
+}
+.getInTouch-contactMe textarea:hover {
+  background-color: white;
+  border: 1px black solid;
+  outline: none;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+#submit-Button {
+  margin-top: 10px;
+  margin-left: 100px;
+  background-color: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+#submit-Button:hover {
+  color: grey;
+  background-color: transparent;
+}
+footer {
+  background-color: #ecf2f9;
+}
+.resume {
+  float: left;
+  width: 50%;
+}
+a {
+  text-decoration: none;
+}
+
+.download-CV {
+  margin-top: 20px;
+  margin-left: 80px;
+  padding: 20px 60px 20px 60px;
+  background-color: none;
+  font-size: 24px;
+  border: 1px solid black;
+}
+a {
+  color: black;
+}
+
+button {
+  all: unset;
+  padding: 10px;
+}
+
+.resume p {
+  text-align: center;
+}
+
+.resume a:active {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}

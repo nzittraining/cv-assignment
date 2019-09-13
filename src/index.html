@@ -9,18 +9,23 @@
   </head>
   <body>
     <header>
-      <a href="/">HOME</a
-      ><a
-        href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
-        target="_blank"
-        >DOWNLOAD MY FULL RESUME</a
-      >
+      <div>
+        <a href="/">HOME</a>
+      </div>
+      <div>
+        <a
+          href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
+          target="_blank"
+          >DOWNLOAD MY FULL RESUME</a
+        >
+      </div>
     </header>
 
     <main>
       <!-- Avatar & Cover Background -->
       <div>
         <h1>John Roberts<br /><span>BUSINESS EXPERT</span></h1>
+
         <img
           src="https://static.wixstatic.com/media/86f442ff0674441faadc2994b1b33e77.jpg/v1/crop/x_130,y_160,w_1320,h_1311/fill/w_496,h_488,al_c,q_80,usm_0.66_1.00_0.01/86f442ff0674441faadc2994b1b33e77.webp"
           alt="John Roberts"
@@ -234,41 +239,96 @@
       </section>
 
       <!-- Information -->
-      <div>
-        <section>
-          <h2>QUICK ID</h2>
-          <ul>
-            <li><b>Phone</b><a href="tel:123-456-7890">123-456-7890</a></li>
-            <li>
-              <b>Email</b><a href="mailto:info@mysite.com">info@mysite.com</a>
-            </li>
-            <li>
-              <b>Website</b
-              ><a href="http://www.wix.com" target="_blank">www.wix.com</a>
-            </li>
-            <li>
-              <b>Address</b>
-              <address>
-                500 Terry Francois Street San Francisco, CA 94158
-              </address>
-            </li>
-          </ul>
+      <div class="getInTouch">
+        <section class="getInTouch-QuickID">
+          <h2 class="contact-heading">Quick ID</h2>
+
+          <table>
+            <tbody>
+              <tr>
+                <td class="thead">Phone</td>
+                <td>123-456-7890</td>
+              </tr>
+              <tr>
+                <td class="thead">Email</td>
+                <td><a href="mailto:info@mysite.com">info@mysite.com</a></td>
+              </tr>
+              <tr>
+                <td class="thead">Wesbite</td>
+                <td>
+                  <a href="http://wix.com" target="_blank">www.wix.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="thead">Address</td>
+                <td>500 Terry Francois Street San Francisco, CA 94158</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
-        <section>
-          <h2>CONTACT ME</h2>
+        <section class="getInTouch-contactMe">
+          <h2 class="contact-heading contact-me">CONTACT ME</h2>
           <!-- Form Related Content for Lesson 2 -->
+          <form action="" method="post">
+            <div class="contact-Name">
+              <label for=" Name" class="sr-only">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                value=""
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="contact-Email">
+              <label for="label" class="sr-only">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                value=""
+                placeholder="Email"
+              />
+            </div>
+            <div>
+              <label for="Subject" class="sr-only">Subject</label>
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                placeholder="Subject"
+                value=""
+              />
+            </div>
+            <div>
+              <label for="message" class="sr-only"> Message </label>
+              <textarea col="5" placeholder="Message"></textarea>
+            </div>
+            <div>
+              <label for="submit-button" class="sr-only"> Submit Button </label>
+              <input
+                id="submit-Button"
+                name="submit"
+                type="button"
+                value="Submit"
+              />
+            </div>
+          </form>
         </section>
       </div>
     </main>
 
     <footer>
-      <div>
-        <a
-          href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
-          target="_blank"
-          >DOWNLOAD MY FULL RESUME</a
-        >
+      <div class="resume">
+        <button class="download-CV">
+          <a
+            href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
+            target="_blank"
+            >DOWNLOAD MY FULL RESUME</a
+          >
+        </button>
         <p>
           © 2023 by John Roberts. Proudly created with
           <a href="http://wix.com" target="_blank">Wix.com</a>
