@@ -1,9 +1,7 @@
-html {
-  font-family: sans-serif;
-}
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header,
@@ -15,6 +13,7 @@ footer {
 ul li {
   list-style: none;
 }
+
 .getInTouch-QuickID {
   box-sizing: border-box;
   padding-top: 30px;
@@ -25,9 +24,7 @@ ul li {
   width: 50%;
   height: 500px;
 }
-table {
-  font-size: 18px;
-}
+
 td {
   padding-right: 80px;
   padding-bottom: 15px;
