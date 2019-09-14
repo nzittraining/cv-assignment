@@ -1,3 +1,43 @@
-section.dark_blue {
-  background-color: ;
+.dark_blue {
+  background-color: #2e4975;
+}
+section#quick_id {
+  color: white;
+  margin-right: 50%;
+}
+section#quick_id h2 {
+  font-size: 38px;
+  font-family: avenir, sans-serif;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+div.red_bar {
+  width: 50px;
+  height: 10px;
+
+  margin-bottom: 20px;
+  border-top: 8px solid #df3143;
+}
+
+.light_blue {
+  background-color: lightsteelblue;
+}
+section#contact_me {
+  margin-left: 50%;
+}
+
+table {
+  text-align: left;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+table td {
+  padding-left: 20%;
+  font-weight: 200;
+}
+table th {
+  text-align: start;
+  text-combine-upright: none;
+  vertical-align: top;
+  font-weight: 700;
 }
