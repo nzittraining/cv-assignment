@@ -1,5 +1,7 @@
-.a {
-  text-decoration: none;
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
 .bui-icon,
@@ -12,21 +14,35 @@ var {
   font-style: normal;
 }
 
-.table {
+/* .table {
   border: 0;
   table-layout: fixed;
-  max-width: 50%;
-}
-
-.td {
-  max-width: 50%;
-}
+  width: 300px;
+  margin-top: 36px;
+} */
 
 .fieldset {
   border: 0px;
 }
 
-.id-container {
+.data-border {
+  width: 52px;
+  height: 7px;
+  background-color: rgb(223, 49, 67);
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+
+.info-section {
+  flex: 1;
+  width: 50%;
+  height: 521px;
+  min-width: 490px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.info-container {
   overflow: hidden;
   width: 100%;
   min-width: 980px;
@@ -35,19 +51,106 @@ var {
   align-items: stretch;
 }
 
-.id-child {
-  flex: 1;
+#quick-id-td td {
+  height: 40px;
+  font-size: 21px;
 }
 
-.id1 {
+.td-lable {
+  width: 150px;
+}
+
+.td-content {
+  width: 250px;
+}
+
+.info-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.info-title {
+  letter-spacing: 3.8px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+#info-quick-id {
   background-color: rgb(46, 73, 117);
   color: white;
+  padding-top: 80px;
+  padding-left: 25%;
+  margin-right: -20%;
 }
 
-.id2 {
+#info-quick-id-td {
+  width: 300px;
+  margin-top: 36px;
+}
+
+#info-contect-me {
   background-color: rgb(187, 200, 221);
+  padding-top: 80px;
+  padding-left: 100px;
 }
 
-.id-container a {
+/* #input-container{
+  text-align: center;
+} */
+
+/* .small-input{
+  width: 50%;
+} */
+
+input {
+  font-size: 21px;
+  border: none;
+  border-bottom: 1px black solid;
+  background: transparent;
+}
+
+input:focus {
+  background: white;
+}
+
+input:hover {
+  background: white;
+  border: 1px black solid;
+}
+
+#input-name,
+#input-email {
+  width: 200px;
+  height: 40px;
+}
+
+#input-subject {
+  width: 405px;
+  height: 40px;
+}
+
+#input_message {
+  font-size: 21px;
+  border: none;
+  border-bottom: 1px black solid;
+  background: transparent;
+  width: 408px;
+  height: 80;
+}
+
+#input_message:focus {
+  background: white;
+}
+
+#input_message:hover {
+  background: white;
+  border: 1px black solid;
+}
+
+.Submit-btn {
+  border: none;
   color: white;
+  background: transparent;
+  margin-left: 150px;
+  font-size: 25px;
 }

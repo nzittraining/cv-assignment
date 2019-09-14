@@ -260,27 +260,30 @@
         </section>
       </div> -->
 
-      <div id="quick-id" class="id-container">
-        <section class="id-child id1">
-          <h2>QUICK ID</h2>
-          <table>
+      <div id="info" class="info-container">
+        <section id="info-quick-id" class="info-section">
+          <h2 class="info-title">QUICK ID</h2>
+          <div class="data-border"></div>
+          <table id="quick-id-td">
             <tr>
-              <td><b>Phone</b></td>
-              <td>123-456-7890</td>
+              <td class="td-lable"><b>Phone</b></td>
+              <td class="td-content">123-456-7890</td>
             </tr>
             <tr>
-              <td><b>Email</b></td>
-              <td><a href="mailto:info@mysite.com">info@mysite.com</a></td>
+              <td class="td-lable"><b>Email</b></td>
+              <td class="td-content">
+                <a href="mailto:info@mysite.com">info@mysite.com</a>
+              </td>
             </tr>
             <tr>
-              <td><b>Website</b></td>
-              <td>
+              <td class="td-lable"><b>Website</b></td>
+              <td class="td-content">
                 <a href="http://www.wix.com" target="_blank">www.wix.com</a>
               </td>
             </tr>
             <tr>
-              <td><b>Address</b></td>
-              <td>
+              <td class="td-lable"><b>Address</b></td>
+              <td class="td-content">
                 <address>
                   500 Terry Francois Street San Francisco, CA 94158
                 </address>
@@ -289,52 +292,55 @@
           </table>
         </section>
 
-        <section class="id-child id2">
-          <h2>CONTACT ME</h2>
-          <div
-            data-border-width="7"
-            style="transform-origin:center 3.5px; width:52px; height:7px"
-          ></div>
-          <form action="" method="post">
-            <fieldset>
-              <div>
-                <!-- <label for="name">Name</label> -->
-                <input
-                  id="name"
-                  name="name"
-                  placeholder="name"
-                  type="text"
-                  value=""
-                />
-                <!-- <label for="email">Email</label> -->
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="email"
-                  value=""
-                />
-              </div>
-              <div>
-                <!-- <label for="subject">subject</label> -->
-                <input
-                  id="subject"
-                  name="subject"
-                  placeholder="subject"
-                  type="text"
-                  value=""
-                />
-              </div>
-              <div>
-                <!-- <label>Message</label> -->
-                <textarea cols="20" rows="3" placeholder="message"></textarea>
-              </div>
-              <div>
-                <button role="button">
-                  <span>Submit</span>
-                </button>
-              </div>
-            </fieldset>
+        <section id="info-contect-me" class="info-section">
+          <h2 class="info-title">CONTACT ME</h2>
+          <div class="data-border"></div>
+          <form id="info-contect-form" action="" method="post">
+            <div id="input-container">
+              <!-- <label for="name">Name</label> -->
+              <input
+                id="input-name"
+                class="“small-input”"
+                name="name"
+                placeholder="name"
+                type="text"
+                value=""
+              />
+              <!-- <label for="email">Email</label> -->
+              <input
+                id="input-email"
+                class="“small-input”"
+                name="email"
+                type="email"
+                placeholder="email"
+                value=""
+              />
+            </div>
+            <div>
+              <!-- <label for="subject">subject</label> -->
+              <input
+                id="input-subject"
+                class="“small-input”"
+                name="subject"
+                placeholder="subject"
+                type="text"
+                value=""
+              />
+            </div>
+            <div>
+              <!-- <label>Message</label> -->
+              <textarea
+                id="input_message"
+                cols="20"
+                rows="3"
+                placeholder="message"
+              ></textarea>
+            </div>
+            <div>
+              <button class="Submit-btn" role="button">
+                <span>Submit</span>
+              </button>
+            </div>
           </form>
         </section>
       </div>
