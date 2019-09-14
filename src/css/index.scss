@@ -1,34 +1,36 @@
-.dark_blue {
-  background-color: #2e4975;
+section.contact {
+  padding-bottom: 100px;
+  padding-top: 10px;
+  padding-left: 50px;
 }
+section.contact h2 {
+  font-size: 38px;
+  font-size-adjust: inherit;
+  font-family: avenir, sans-serif;
+  font-style: normal;
+  margin-bottom: 2%;
+  margin-top: 40px;
+}
+div.red_bar {
+  width: 70px;
+  margin-bottom: 5%;
+  border-top: 7px solid #df3143;
+}
+
 section#quick_id {
   color: white;
   margin-right: 50%;
-}
-section#quick_id h2 {
-  font-size: 38px;
-  font-family: avenir, sans-serif;
-  font-style: normal;
-  margin-bottom: 10px;
-}
-div.red_bar {
-  width: 50px;
-  height: 10px;
-
-  margin-bottom: 20px;
-  border-top: 8px solid #df3143;
-}
-
-.light_blue {
-  background-color: lightsteelblue;
+  background-color: #2e4975;
+  height: 100%;
 }
 section#contact_me {
+  background-color: lightsteelblue;
   margin-left: 50%;
 }
 
 table {
   text-align: left;
-  font-size: 15px;
+  font-size: 20px;
   font-family: sans-serif;
 }
 table td {
@@ -40,4 +42,56 @@ table th {
   text-combine-upright: none;
   vertical-align: top;
   font-weight: 700;
+}
+form label {
+  display: none;
+}
+form input {
+  background-color: lightsteelblue;
+  color: white;
+  border: 2px hidden lightsteelblue;
+  border-radius: 4px;
+  border-bottom: 2px solid darkgrey;
+  padding: 12px 10px;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 20%;
+}
+form input#subject {
+  display: block;
+  width: 48%;
+}
+form textarea {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 2px hidden lightsteelblue;
+  border-radius: 4px;
+  background-color: lightsteelblue;
+  font-size: 20px;
+  border-bottom: 2px solid darkgrey;
+  margin: 20px;
+  padding: 1px 10px;
+}
+input::placeholder {
+  font-style: normal;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 200;
+  font-size: 20px;
+}
+textarea::placeholder {
+  font-style: normal;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 200;
+  font-size: 20px;
+}
+input[type='submit' i] {
+  color: white;
+  border-style: hidden;
+  background-color: lightsteelblue;
+  font-size: 20px;
+  display: block;
+  margin-left: 20%;
+  width: 20%;
 }
