@@ -1,0 +1,127 @@
+@import './core/constants';
+@import './core/mixins';
+
+#information {
+  .quick-id,
+  .contact-me {
+    padding: 70px 40px;
+    min-height: 520px;
+
+    h2 {
+      font-size: $font-xl;
+    }
+  }
+
+  .quick-id {
+    color: $white;
+    background: $navy;
+
+    h2,
+    table {
+      width: 310px;
+    }
+
+    h2 {
+      color: $white;
+    }
+
+    table {
+      line-height: 2;
+      font-weight: lighter;
+    }
+
+    a {
+      &,
+      &:hover {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+    .label {
+      width: 120px;
+      font-weight: bold;
+    }
+  }
+
+  .contact-me {
+    background: $cyan;
+
+    h2,
+    form {
+      width: 430px;
+    }
+
+    label {
+      @include text-hide();
+    }
+
+    input {
+      @include vertical-center(42px);
+      padding: 3px;
+      padding-left: 12px;
+    }
+
+    textarea {
+      resize: none;
+      margin-bottom: 10px;
+      padding: 10px 12px;
+      height: 72px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      outline: none;
+      border: 1px solid transparent;
+      border-bottom-color: $grey;
+      background: transparent;
+      margin-bottom: 3px;
+
+      &::placeholder {
+        color: $grey;
+      }
+
+      &:focus {
+        background: $white;
+        border-color: $grey;
+      }
+    }
+
+    .two-column {
+      // https://css-tricks.com/fighting-the-space-between-inline-block-elements/#article-header-id-3
+      font-size: 0;
+
+      .form-group {
+        font-size: $font-m;
+        width: 47.5%;
+        display: inline-block;
+        margin-right: 5%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .form-action {
+      text-align: center;
+    }
+
+    button {
+      @include vertical-center(30px);
+      padding: 0 15px;
+      background: transparent;
+      outline: 0;
+      border: none;
+      cursor: default;
+      font-size: $font-l;
+      font-weight: bold;
+      color: $white;
+
+      &:hover {
+        color: $dark-cyan;
+      }
+    }
+  }
+}

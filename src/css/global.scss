@@ -1,0 +1,49 @@
+@import '~css-reset-and-normalize';
+
+@import './core/constants';
+@import './core/mixins';
+
+/*****************
+ *   CSS RESET   *
+ *****************/
+
+.my-cv {
+  * {
+    &,
+    &:before,
+    &:after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  }
+
+  body {
+    overflow-x: hidden;
+    font-size: $font-m;
+    font-family: $font-family-content;
+    color: $black;
+    background: $white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-family-title;
+    font-weight: bold;
+  }
+
+  hr {
+    @include size(58px, 7px);
+    background: $red;
+    margin: 15px 0 40px;
+    border: none;
+  }
+
+  .content {
+    @include center-block();
+  }
+}

@@ -7,7 +7,7 @@
     <title>John Roberts' CV</title>
     <link rel="stylesheet" href="./css/index.scss" />
   </head>
-  <body>
+  <body class="my-cv">
     <header>
       <a href="/">HOME</a
       ><a
@@ -233,31 +233,95 @@
         </ul>
       </section>
 
-      <!-- Information -->
-      <div>
-        <section>
-          <h2>QUICK ID</h2>
-          <ul>
-            <li><b>Phone</b><a href="tel:123-456-7890">123-456-7890</a></li>
-            <li>
-              <b>Email</b><a href="mailto:info@mysite.com">info@mysite.com</a>
-            </li>
-            <li>
-              <b>Website</b
-              ><a href="http://www.wix.com" target="_blank">www.wix.com</a>
-            </li>
-            <li>
-              <b>Address</b>
-              <address>
-                500 Terry Francois Street San Francisco, CA 94158
-              </address>
-            </li>
-          </ul>
+      <div id="information">
+        <section class="quick-id">
+          <div class="content">
+            <h2>QUICK ID</h2>
+            <hr />
+            <table>
+              <tr>
+                <td class="label">Phone</td>
+                <td>
+                  <a href="tel:123-456-7890">123-456-7890</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">
+                  Email
+                </td>
+                <td>
+                  <a href="mailto:info@mysite.com">info@mysite.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">Website</td>
+                <td>
+                  <a href="http://www.wix.com" target="_blank">www.wix.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">Address</td>
+                <td>
+                  <address>
+                    500 Terry Francois Street San Francisco, CA 94158
+                  </address>
+                </td>
+              </tr>
+            </table>
+          </div>
         </section>
 
-        <section>
-          <h2>CONTACT ME</h2>
-          <!-- Form Related Content for Lesson 2 -->
+        <section class="contact-me">
+          <div class="content">
+            <h2>CONTACT ME</h2>
+            <hr />
+            <form action="/contact-me" method="POST">
+              <div class="two-column">
+                <div class="form-group">
+                  <label for="contact-name">Name</label>
+                  <input
+                    id="contact-name"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input
+                  id="contact-subject"
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  row="5"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+
+              <div class="form-action">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
         </section>
       </div>
     </main>
