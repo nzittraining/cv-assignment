@@ -1,4 +1,4 @@
-<style>
+
 
 h1 {
 font-size: 80px; 
@@ -70,4 +70,106 @@ font-size:20pt;
 color:DodgerBlue;
 text-align:center;
 }
-</style>
+.Info-text1{ 
+  width: 660px;
+  height: 630px;
+  background-image: repeating-linear-gradient(120deg,#3498bd,#8e44ad); 
+  color: white;
+  font-family: sans-serif;
+ }
+ 
+ .h2-qu1{
+    padding: 40px 40px;
+    font-size: 40px;
+ }
+ .h2-qu2{
+    padding: 40px 40px;
+    font-size: 40px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+ }
+ 
+ tr{
+     font-size: 16px;
+     line-height: 40px;   
+ }
+ .bold-font{
+     font-weight: bold;
+     margin-top: 50px;
+     padding: 3px 40px 0;
+     text-align: left;
+     line-height: normal;
+     position: relative;  
+ }
+ a{
+     color: white;
+ }
+ .Info-text2{ 
+  width: 660px;
+  height: 630px;
+  background-image: repeating-linear-gradient(120deg,#3498bd,#8e44ad); 
+  color: white;
+  font-family: sans-serif;
+ }
+ 
+ .input{ 
+  width: 35%;
+  padding: 20px 40px;
+  margin-bottom: 25px;
+  border: NONE;
+  font-size: 14px;
+  outline:none;
+  transform: all 0.5s;
+ }
+ .msg{
+  padding: 0px 40px;
+  margin-bottom: 25px;
+  border: NONE;
+  font-size: 14px;
+  outline:none;
+  transform: all 0.5s;
+ }
+ .area{
+     width: 80%;
+     padding: 70px 40px;
+ }
+ .subject{
+  width: 190%;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  outline:none;
+  transform: all 0.5s;
+ }
+ .login.input{
+     width: 48%;
+     float: left;
+     margin-right: 4%;
+ }
+ .login.input:last-child{
+     margin: 200px;
+ }
+ .msg,area{
+     height: 200px;
+ }
+ .input:focus,
+ msg.area:focus{
+     border 2px solid #0575e6;
+ }
+ .submit{
+     width: 40%;
+     text-align:center;
+ }
+ .submit,.btn{
+     margin-bottom: 5px;
+     text-align: center;
+     font-size: 20px;
+     padding: 12px 85px;
+     font-size: 19px;
+     text-decoration: :none;
+     color: #fff;
+     text-transform: uppercase;
+     cursor: pointer;
+     border-radius: 5px;
+ }
