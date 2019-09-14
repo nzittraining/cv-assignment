@@ -236,7 +236,9 @@
 
       <!-- Information -->
       <div>
-        <section>
+        <section class="dark_blue">
+          <h2>QUICK ID</h2>
+          <div class="red_bar"></div>
           <table>
             <tr>
               <th>Phone</th>
@@ -256,9 +258,31 @@
             </tr>
           </table>
         </section>
-        <section>
+        <section class="light_blue">
           <h2>CONTACT ME</h2>
+          <div class="red_bar"></div>
           <!-- Form Related Content for Lesson 2 -->
+          <form>
+            <label for="name">Name</label>
+            <input name="name" class="in_put" placeholder="Name" value="" />
+            <label for="email">Email</label>
+            <input name="email" class="in_put" placeholder="Email" value="" />
+            <label for="subject">Subject</label>
+            <input
+              name="subject"
+              class="in_put"
+              placeholder="Subject"
+              value=""
+            />
+            <label>Message</label>
+            <input
+              name="message"
+              class="in_put"
+              placeholder="Message"
+              value=""
+            />
+            <input type="submit" id="submit" value="Submit" />
+          </form>
         </section>
       </div>
     </main>
