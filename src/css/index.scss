@@ -1,7 +1,6 @@
 section.contact {
   padding-bottom: 100px;
   padding-top: 10px;
-  padding-left: 50px;
 }
 section.contact h2 {
   font-size: 38px;
@@ -9,26 +8,32 @@ section.contact h2 {
   font-family: avenir, sans-serif;
   font-style: normal;
   margin-bottom: 2%;
-  margin-top: 40px;
+  margin-top: 20px;
+  padding-left: 10%;
 }
 div.red_bar {
   width: 70px;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   border-top: 7px solid #df3143;
+  margin-left: 10%;
 }
 
 section#quick_id {
+  float: left;
   color: white;
-  margin-right: 50%;
   background-color: #2e4975;
-  height: 100%;
+  width: 50%;
+  height: 300px;
 }
 section#contact_me {
+  float: right;
   background-color: lightsteelblue;
-  margin-left: 50%;
+  width: 50%;
+  height: 300px;
 }
 
 table {
+  padding-left: 10%;
   text-align: left;
   font-size: 20px;
   font-family: sans-serif;
@@ -43,6 +48,9 @@ table th {
   vertical-align: top;
   font-weight: 700;
 }
+form {
+  padding-left: 5%;
+}
 form label {
   display: none;
 }
@@ -54,13 +62,13 @@ form input {
   border-bottom: 2px solid darkgrey;
   padding: 12px 10px;
   font-size: 16px;
-  margin-left: 20px;
+  margin-left: 5%;
   margin-right: 20px;
   width: 20%;
 }
 form input#subject {
   display: block;
-  width: 48%;
+  width: 50%;
 }
 form textarea {
   width: 50%;
@@ -71,7 +79,7 @@ form textarea {
   background-color: lightsteelblue;
   font-size: 20px;
   border-bottom: 2px solid darkgrey;
-  margin: 20px;
+  margin: 5%;
   padding: 1px 10px;
 }
 input::placeholder {
