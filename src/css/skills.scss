@@ -24,3 +24,55 @@ h2 {
   margin-bottom: 35px;
   background-color: red;
 }
+
+//skills display
+
+.skill-excel {
+  height: $skill-s;
+  width: $skill-s;
+  position: absolute;
+}
+
+.skill-word {
+  margin-left: $skill-s;
+  height: $skill-s;
+  width: $skill-s;
+  position: absolute;
+}
+
+.skill-adobe {
+  height: $skill-m;
+  width: $skill-m;
+  margin-left: $skill-s * 2;
+  position: absolute;
+}
+
+.skill-spanish {
+  height: $skill-xl;
+  width: $skill-xl;
+  margin-left: $skill-s * 2 + $skill-m;
+  position: absolute;
+}
+
+.skill-pp {
+  height: $skill-l;
+  width: $skill-l;
+  margin-top: $skill-s;
+  position: absolute;
+}
+
+.skill-french {
+  height: $skill-m;
+  width: $skill-m;
+  margin-left: $skill-l;
+  margin-top: $skill-m;
+  position: absolute;
+}
+
+.skill_white {
+  background-color: $white;
+}
+
+.skill_cyan {
+  background-color: $cyan;
+}
