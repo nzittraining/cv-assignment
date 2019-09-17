@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../html/style.css" />
     <title>John Roberts' CV</title>
-    <link rel="stylesheet" href="./css/index.scss" />
   </head>
   <body>
     <header>
@@ -234,34 +234,56 @@
       </section>
 
       <!-- Information -->
-      <div>
+      <div class="Info-text1">
         <section>
-          <h2>QUICK ID</h2>
-          <ul>
-            <li><b>Phone</b><a href="tel:123-456-7890">123-456-7890</a></li>
-            <li>
-              <b>Email</b><a href="mailto:info@mysite.com">info@mysite.com</a>
-            </li>
-            <li>
-              <b>Website</b
-              ><a href="http://www.wix.com" target="_blank">www.wix.com</a>
-            </li>
-            <li>
-              <b>Address</b>
-              <address>
-                500 Terry Francois Street San Francisco, CA 94158
-              </address>
-            </li>
-          </ul>
+            <h2 class="h2-qu1">QUICK ID</h2>
+            <box></box>
+            <table>
+               <tr>
+                   <td class="bold-font">Phone</td>
+                   <td> <a href="tel:123-456-7890" class="link"> 123-456-789</a></td> 
+               </tr> 
+               <tr>    
+                   <td class="bold-font">Email</td>   
+                   <td><a href="mailto:info@mysite.com">info@mysite.com</a></td>
+               </tr>
+               <tr>
+                   <td class="bold-font">Website</td>
+                   <td><a href="http://www.wix.com" target="_blank">www.wix.com</a></td> 
+               </tr>
+                <tr>
+                   <td class="bold-font">Address</td>
+                   <td>500 Terry Francois Street San Francisco, CA 94158</td>
+                </tr>
+            </table>
         </section>
-
+        </div>
         <section>
-          <h2>CONTACT ME</h2>
-          <!-- Form Related Content for Lesson 2 -->
+            <div class="Info-text2"> 
+            <div class="container">
+            <p class="h2-qu2">CONTACT ME</p>
+            
+              <div class="login">
+                <input type="text" name="" placeholder="Name" class="input">
+                <input type="text" email="" placeholder="Email" class="input">
+            </div> 
+            <div class="subject">
+                <input type="text" name="" placeholder="Subject" class="input">
+            </div>
+            <div class="msg">
+                <textarea class="area" placeholder="Message"></textarea>
+            </div>
+                </div>
+             
+              <div class="submit">
+                  <a href="#" class="btn">Submit</a>   
+              </div>
+            </div>
+               
+           
         </section>
-      </div>
+        
     </main>
-
     <footer>
       <div>
         <a
@@ -297,7 +319,7 @@
         <p>Follow me on social netwroks</p>
       </div>
     </footer>
-
+    
     <script src="./js/index.js"></script>
   </body>
 </html>
