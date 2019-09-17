@@ -1,0 +1,26 @@
+@import './core/constants';
+@import './core/mixins';
+
+//skill container
+$skill-s: 145px;
+$skill-m: 217.5px;
+$skill-l: 290px;
+$skill-xl: 435px;
+
+h2 {
+  font-size: $font-xl;
+}
+
+#skills {
+  background-color: $dark-cyan;
+  height: max-content;
+  position: relative;
+}
+
+.skills-container {
+  @include center-block;
+  width: 941px;
+  height: 434.3px;
+  margin-bottom: 35px;
+  background-color: red;
+}
