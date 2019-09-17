@@ -17,6 +17,12 @@ h2 {
   position: relative;
 }
 
+.skills-heading {
+  padding-left: 158px;
+  padding-top: 115px;
+  padding-bottom: 85px;
+}
+
 .skills-container {
   @include center-block;
   width: 941px;
