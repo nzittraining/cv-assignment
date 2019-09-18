@@ -2,16 +2,129 @@
 @import './core/mixins';
 
 #skills {
-  padding: 20px 70px;
+  padding: 35px 70px;
   min-height: 600px;
-  background-image: url(
-    https://static.wixstatic.com/media/05e3dc_cc646f530d6846828d53dd3216ec8023~mv2.jpg/v1/fill/w_1349,
-    h_274,
-    al_c,
-    q_85,
-    usm_0.66_1.00_0.01/05e3dc_cc646f530d6846828d53dd3216ec8023~mv2.webp
-  );
+  background-image: url('https://static.wixstatic.com/media/05e3dc_cc646f530d6846828d53dd3216ec8023~mv2.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+
+  .content {
+    width: 950px;
+    margin-top: 100px;
+    h2 {
+      color: $white;
+      font-size: $font-xl;
+    }
+    hr {
+      background: $white;
+    }
+
+    .skill-board {
+      @include size(100%, 435px);
+      .light {
+        background-color: $skill-bg-light;
+        .skill-title {
+          color: $black;
+        }
+        .skill-level {
+          color: $red;
+          font-weight: 600;
+        }
+      }
+      .dark {
+        background-color: $skill-bg-dark;
+        .skill-title {
+          color: $black;
+        }
+        .skill-level {
+          color: $navy;
+          font-weight: 600;
+        }
+      }
+
+      li {
+        float: left;
+        .skill-title,
+        .skill-level {
+          text-align: center;
+        }
+
+        &.small {
+          @include size(145px);
+          .skill-title {
+            position: relative;
+            top: 50%;
+            font-size: 8px;
+            @include vertical-center(10px);
+            margin-top: -18px;
+            margin-bottom: 4px;
+          }
+          .skill-level {
+            position: relative;
+            font-size: 14px;
+            top: 50%;
+          }
+        }
+        &.medium {
+          @include size(218px);
+          .skill-title {
+            position: relative;
+            top: 50%;
+            font-size: 12px;
+            @include vertical-center(10px);
+            margin-top: -20px;
+            margin-bottom: 4px;
+          }
+          .skill-level {
+            position: relative;
+            font-size: 20px;
+            top: 50%;
+          }
+        }
+        &.large {
+          @include size(290px);
+          .skill-title {
+            position: relative;
+            top: 50%;
+            font-size: 16px;
+            font-weight: bold;
+            @include vertical-center(10px);
+            margin-top: -25px;
+            margin-bottom: 12px;
+          }
+          .skill-level {
+            position: relative;
+            font-size: 28px;
+            top: 50%;
+          }
+        }
+
+        &.extra-large {
+          @include size(435px);
+          .skill-title {
+            position: relative;
+            top: 50%;
+            font-size: 24px;
+            font-weight: bold;
+            @include vertical-center(10px);
+            margin-top: -30px;
+            margin-bottom: 16px;
+          }
+          .skill-level {
+            position: relative;
+            font-size: 42px;
+            top: 50%;
+          }
+        }
+      }
+      .wrap-first {
+        margin-top: -290px;
+      }
+      .wrap-second {
+        margin-top: -218px;
+        margin-left: 290px;
+      }
+    }
+  }
 }

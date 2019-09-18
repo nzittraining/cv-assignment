@@ -36,14 +36,30 @@
     font-weight: bold;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   hr {
     @include size(58px, 7px);
     background: $red;
-    margin: 15px 0 40px;
+    margin: 15px auto 40px 0px;
     border: none;
   }
 
   .content {
     @include center-block();
+  }
+  .download-resume-btn {
+    padding: 12px 55px;
+    font-size: $font-xs;
+    font-weight: lighter;
+    color: $white;
+    border: 1px solid $white;
+    &:hover {
+      color: $red;
+      background-color: $white;
+      border: 1px solid $red;
+    }
   }
 }

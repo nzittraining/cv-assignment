@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="./css/index.scss" />
   </head>
   <body class="my-cv">
-    <header>
-      <a href="/">HOME</a
-      ><a
-        href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
-        target="_blank"
-        >DOWNLOAD MY FULL RESUME</a
-      >
+    <header id="header">
+      <div class="header-nav"><a class="header-nav" href="/">HOME</a></div>
+      <div class="header-btn-grp">
+        <a
+          class="download-resume-btn"
+          href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
+          target="_blank"
+          >DOWNLOAD MY FULL RESUME</a
+        >
+      </div>
     </header>
 
     <main>
@@ -204,33 +207,36 @@
 
       <!-- Skills -->
       <section id="skills">
-        <h2>SKILLS</h2>
-        <ul>
-          <li>
-            <div>Microsoft Excel</div>
-            <div>Advanced</div>
-          </li>
-          <li>
-            <div>Microsoft Word</div>
-            <div>Advanced</div>
-          </li>
-          <li>
-            <div>Adobe</div>
-            <div>Proficient</div>
-          </li>
-          <li>
-            <div>Spanish</div>
-            <div>Advanced</div>
-          </li>
-          <li>
-            <div>PowerPoint</div>
-            <div>Proficient</div>
-          </li>
-          <li>
-            <div>French</div>
-            <div>Native</div>
-          </li>
-        </ul>
+        <div class="content">
+          <h2>SKILLS</h2>
+          <hr />
+          <ul class="skill-board">
+            <li class="small light">
+              <div class="skill-title">Microsoft Excel</div>
+              <div class="skill-level">Advanced</div>
+            </li>
+            <li class="small dark">
+              <div class="skill-title">Microsoft Word</div>
+              <div class="skill-level">Advanced</div>
+            </li>
+            <li class="medium dark">
+              <div class="skill-title">Adobe</div>
+              <div class="skill-level">Proficient</div>
+            </li>
+            <li class="extra-large dark last-item">
+              <div class="skill-title">Spanish</div>
+              <div class="skill-level">Advanced</div>
+            </li>
+            <li class="large light wrap-first">
+              <div class="skill-title">PowerPoint</div>
+              <div class="skill-level">Proficient</div>
+            </li>
+            <li class="medium light wrap-second">
+              <div class="skill-title">French</div>
+              <div class="skill-level">Native</div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <div id="information">

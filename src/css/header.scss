@@ -1,0 +1,30 @@
+@import './core/constants';
+@import './core/mixins';
+
+$hearder_height: 60px;
+
+#header {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  padding: 0px 60px;
+  .header-nav,
+  .header-btn-grp {
+    @include vertical-center($hearder_height);
+  }
+  .header-nav {
+    a {
+      color: $white;
+      font-size: $font-m;
+      font-weight: bold;
+      &:hover {
+        color: $cyan;
+      }
+    }
+  }
+
+  .header-btn-grp {
+    text-align: right;
+    margin: -$hearder_height 0px;
+  }
+}
