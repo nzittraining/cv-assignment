@@ -1,0 +1,17 @@
+@import './core/constants';
+@import './core/mixins';
+
+#skills {
+  padding: 20px 70px;
+  min-height: 600px;
+  background-image: url(
+    https://static.wixstatic.com/media/05e3dc_cc646f530d6846828d53dd3216ec8023~mv2.jpg/v1/fill/w_1349,
+    h_274,
+    al_c,
+    q_85,
+    usm_0.66_1.00_0.01/05e3dc_cc646f530d6846828d53dd3216ec8023~mv2.webp
+  );
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}

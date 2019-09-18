@@ -2,14 +2,24 @@
 @import './core/mixins';
 
 #information {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
   .quick-id,
   .contact-me {
     padding: 70px 40px;
     min-height: 520px;
+    width: 50%;
+    float: left;
 
     h2 {
       font-size: $font-xl;
     }
+  }
+  .content {
+    width: 450px;
   }
 
   .quick-id {
@@ -42,10 +52,18 @@
       width: 120px;
       font-weight: bold;
     }
+    .content {
+      width: 380px !important;
+      margin-right: 0px;
+    }
   }
 
   .contact-me {
     background: $cyan;
+
+    .content {
+      margin-left: 0px;
+    }
 
     h2,
     form {
