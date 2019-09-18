@@ -6,7 +6,7 @@
   .contact-me {
     padding: 70px 40px;
     min-height: 520px;
-
+    max-width: 50%;
     h2 {
       font-size: $font-xl;
     }
@@ -15,112 +15,124 @@
   .quick-id {
     color: $white;
     background: $navy;
+    float: left;
 
-    h2,
-    table {
-      width: 310px;
-    }
+    .content {
+      position: relative;
+      top: 10px;
+      left: 60%;
 
-    h2 {
-      color: $white;
-    }
-
-    table {
-      line-height: 2;
-      font-weight: lighter;
-    }
-
-    a {
-      &,
-      &:hover {
-        color: $white;
-        text-decoration: none;
+      h2,
+      table {
+        width: 310px;
       }
-    }
 
-    .label {
-      width: 120px;
-      font-weight: bold;
+      h2 {
+        color: $white;
+      }
+
+      table {
+        line-height: 2;
+        font-weight: lighter;
+      }
+
+      a {
+        &,
+        &:hover {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+
+      .label {
+        width: 120px;
+        font-weight: bold;
+      }
     }
   }
 
   .contact-me {
     background: $cyan;
+    float: right;
+    .content {
+      position: relative;
+      top: 10px;
 
-    h2,
-    form {
-      width: 430px;
-    }
-
-    label {
-      @include text-hide();
-    }
-
-    input {
-      @include vertical-center(42px);
-      padding: 3px;
-      padding-left: 12px;
-    }
-
-    textarea {
-      resize: none;
-      margin-bottom: 10px;
-      padding: 10px 12px;
-      height: 72px;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      outline: none;
-      border: 1px solid transparent;
-      border-bottom-color: $grey;
-      background: transparent;
-      margin-bottom: 3px;
-
-      &::placeholder {
-        color: $grey;
+      h2,
+      form {
+        width: 430px;
       }
 
-      &:focus {
-        background: $white;
-        border-color: $grey;
+      label {
+        @include text-hide();
       }
-    }
 
-    .two-column {
-      // https://css-tricks.com/fighting-the-space-between-inline-block-elements/#article-header-id-3
-      font-size: 0;
+      input {
+        @include vertical-center(42px);
+        padding: 3px;
+        padding-left: 12px;
+      }
 
-      .form-group {
-        font-size: $font-m;
-        width: 47.5%;
-        display: inline-block;
-        margin-right: 5%;
+      textarea {
+        resize: none;
+        margin-bottom: 10px;
+        padding: 10px 12px;
+        height: 72px;
+      }
 
-        &:last-child {
-          margin-right: 0;
+      input,
+      textarea {
+        width: 100%;
+        outline: none;
+        border: 1px solid transparent;
+        border-bottom-color: $grey;
+        background: transparent;
+        margin-bottom: 3px;
+
+        &::placeholder {
+          color: $grey;
+        }
+
+        &:focus {
+          background: $white;
+          border-color: $grey;
         }
       }
-    }
 
-    .form-action {
-      text-align: center;
-    }
+      .two-column {
+        // https://css-tricks.com/fighting-the-space-between-inline-block-elements/#article-header-id-3
+        font-size: 0;
 
-    button {
-      @include vertical-center(30px);
-      padding: 0 15px;
-      background: transparent;
-      outline: 0;
-      border: none;
-      cursor: default;
-      font-size: $font-l;
-      font-weight: bold;
-      color: $white;
+        .form-group {
+          font-size: $font-m;
+          width: 47.5%;
+          display: inline-block;
+          margin-right: 5%;
 
-      &:hover {
-        color: $dark-cyan;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .form-action {
+        text-align: center;
+      }
+
+      button {
+        @include vertical-center(30px);
+        padding: 0 15px;
+        background: transparent;
+        outline: 0;
+        border: none;
+        cursor: default;
+        font-size: $font-l;
+        font-weight: bold;
+        color: $white;
+
+        &:hover {
+          color: $dark-cyan;
+        }
       }
     }
   }
