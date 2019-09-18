@@ -25,3 +25,11 @@
   background-color: transparent;
   border: 0;
 }
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
