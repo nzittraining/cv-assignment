@@ -1,7 +1,10 @@
 $primary_color: #ffffff;
 $secondary_color: #070a0e;
 $tertiary_color: #94a3ba;
-$btn_hover_color: #ff7675;
+$btn_hover_color: #df3412;
+$skill_background_1: #edeff5;
+$skill_background_2: #bbc8dd;
+$contact_h2_color: rgba(223, 49, 67, 1);
 
 * {
   box-sizing: border-box;
@@ -9,9 +12,7 @@ $btn_hover_color: #ff7675;
 }
 
 .bgimg {
-  background: url('../css/cv.jpg') fixed no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: center / cover url('../css/cv.jpg') fixed no-repeat;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -26,7 +27,7 @@ $btn_hover_color: #ff7675;
   padding: 20px 0 0 0;
   height: 100px;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
 }
 
 .headleft {
@@ -41,47 +42,57 @@ $btn_hover_color: #ff7675;
 
 #home {
   text-decoration: none;
-  font-size: 28px;
+  font-size: 24px;
   color: $primary_color;
   font-weight: bold;
-  float: left;
   margin-left: 10%;
+  line-height: 50px;
+  text-transform: uppercase;
+  &:hover {
+    color: $skill_background_2;
+  }
 }
 
 #download {
   margin-right: 10%;
   float: right;
   text-decoration: none;
-  border: 2px solid $primary_color;
-  font-size: 18px;
-  padding: 4px 25px;
+  border: 1px solid $primary_color;
+  font-weight: lighter;
+  font-size: 90%;
+  padding: 12px 50px;
   color: $primary_color;
+  cursor: pointer;
+  transition: color 0.4s ease 0s;
   &:hover {
-    background: $btn_hover_color;
+    background: $primary_color;
+    color: $btn_hover_color;
+    border-color: $btn_hover_color;
+  }
+}
+
+h2 {
+  color: $primary_color;
+  letter-spacing: 4px;
+  max-width: 949px;
+  margin: 0 auto;
+  &::after {
+    content: '';
+    display: block;
+    width: 53px;
+    border: 3px solid $primary_color;
+    margin: 30px 0;
   }
 }
 
 .skills-section {
   position: relative;
   width: 100%;
-  h2 {
-    color: $primary_color;
-    letter-spacing: 4px;
-    max-width: 949px;
-    margin: 0 auto;
-    &::after {
-      content: '';
-      display: block;
-      width: 100px;
-      border: 3px solid $btn_hover_color;
-      margin: 30px 0;
-    }
-  }
 }
 
 .skill-inner-width {
   width: 949px;
-  margin: 0 auto 20px;
+  margin: 0 auto 34px;
   display: flex;
 }
 
@@ -103,11 +114,12 @@ $btn_hover_color: #ff7675;
   display: flex;
   flex-flow: column wrap;
   text-align: center;
+  justify-content: center;
 }
 
 .skill_name,
 .skill_level {
-  flex: 1;
+  margin: 0;
 }
 
 .skill_level {
@@ -120,12 +132,10 @@ $btn_hover_color: #ff7675;
   height: 147px;
   order: 0;
   .skill_name {
-    font-size: 10px;
-    transform: translateY(115%);
+    font-size: 55%;
   }
   .skill_level {
-    font-size: 18px;
-    transform: translateY(-20%);
+    font-size: 110%;
   }
 }
 
@@ -136,11 +146,9 @@ $btn_hover_color: #ff7675;
   .skill_name {
     font-size: 15px;
     font-weight: 500;
-    transform: translateY(115%);
   }
   .skill_level {
-    font-size: 25px;
-    transform: translateY(-20%);
+    font-size: 155%;
   }
 }
 
@@ -151,11 +159,9 @@ $btn_hover_color: #ff7675;
   transform: translateY(-75px);
   .skill_name {
     font-weight: 700;
-    transform: translateY(115%);
   }
   .skill_level {
-    font-size: 30px;
-    transform: translateY(-15%);
+    font-size: 200%;
   }
 }
 
@@ -163,20 +169,18 @@ $btn_hover_color: #ff7675;
   width: 438px;
   height: 438px;
   .skill_name {
-    font-size: 20px;
+    font-size: 150%;
     font-weight: 600;
-    transform: translateY(115%);
   }
   .skill_level {
-    font-size: 50px;
-    transform: translateY(-20%);
+    font-size: 230%;
   }
 }
 
 #msexcel,
 #ppt,
 #french {
-  background: #edeff5;
+  background: $skill_background_1;
   .skill_level {
     color: #e14e5e;
   }
@@ -184,7 +188,7 @@ $btn_hover_color: #ff7675;
 #adobe,
 #msword,
 #spanish {
-  background: #bbc8dd;
+  background: $skill_background_2;
   .skill_level {
     color: #2e4975;
   }
@@ -198,23 +202,14 @@ $btn_hover_color: #ff7675;
 }
 
 .contacts-section {
-  border: 0 solid;
+  border: 0;
   font-size: 0;
-  flex-flow: column wrap;
-  h2 {
-    letter-spacing: 4px;
-    &::after {
-      content: '';
-      display: block;
-      width: 100px;
-      border: 3px solid $btn_hover_color;
-      margin: 30px 0;
-    }
+  h2::after {
+    border: 3px solid $contact_h2_color;
   }
 }
 
 .contacts-section > section {
-  flex: 1;
   width: 50%;
   display: inline-block;
   height: 500px;
@@ -232,24 +227,24 @@ $btn_hover_color: #ff7675;
     color: $primary_color;
     text-decoration: none;
   }
-  h2 {
-    color: $primary_color;
-    font-size: 24px;
-  }
   table {
     width: 320px;
     margin-top: 36px;
   }
-  tr th {
+  th {
     line-height: 28px;
     text-align: left;
     vertical-align: text-top;
   }
 }
+label {
+  display: none;
+}
 
 #contact-me-form {
   text-align: center;
   width: 474px;
+  background: $skill_background_2;
   textarea {
     height: 80px;
   }
@@ -287,7 +282,7 @@ $btn_hover_color: #ff7675;
     margin: 20px 0;
     font-size: 18px;
     &:hover {
-      color: $btn_hover_color;
+      color: $tertiary_color;
     }
   }
 }
@@ -349,8 +344,9 @@ footer {
     background: transparent;
     border: 1px solid $secondary_color;
     &:hover {
-      color: $primary_color;
-      background: $btn_hover_color;
+      color: $btn_hover_color;
+      background: $primary_color;
+      border-color: $btn_hover_color;
     }
   }
 }
