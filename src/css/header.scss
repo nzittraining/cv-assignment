@@ -1,0 +1,37 @@
+@import './core/constants';
+@import './core/mixins';
+
+header {
+  #home {
+    position: fixed;
+    top: 77px;
+    left: 66px;
+    font-family: $font-family-title;
+    font-size: $font-l;
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  .download-resume {
+    position: fixed;
+    top: 64px;
+    right: 70px;
+    color: $white;
+    display: block;
+    height: 40px;
+    width: 301px;
+    border: 1px solid $white;
+    text-decoration: none;
+    z-index: 1;
+    text-align: center;
+    line-height: 40px;
+
+    &:hover {
+      color: $red;
+      border: 1px solid $red;
+      background: $white;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+@import './core/constants';
+@import './core/mixins';
+
+#skills {
+  min-height: 708.3px;
+  background-image: url('./img/background.jpg');
+  background-attachment: fixed;
+  position: relative;
+
+  .skills-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -41%);
+
+    h2 {
+      color: $white;
+      font-size: $font-xl;
+    }
+
+    #skills-hr {
+      background: $white;
+    }
+
+    .skills-ul {
+      display: flex;
+      flex-wrap: wrap;
+      float: top;
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    #skills-detail-container {
+      height: 434px;
+      width: 942px;
+      background-color: greenyellow;
+      font-family: $font-family-title;
+      font-weight: bold;
+
+      #skills-li-excel {
+        height: 145.5px;
+        width: 145.5px;
+        background-color: $light-cyan;
+
+        & div:first-child {
+          font-size: 4px;
+          -webkit-transform: scale(0.7);
+        }
+
+        & div:nth-child(2) {
+          font-size: 16px;
+          color: $red;
+        }
+      }
+
+      #skills-li-word {
+        height: 145.5px;
+        width: 145.5px;
+        background-color: $cyan;
+
+        & div:first-child {
+          font-size: 4px;
+          -webkit-transform: scale(0.7);
+        }
+
+        & div:nth-child(2) {
+          font-size: 16px;
+          color: $navy;
+        }
+      }
+
+      #skills-li-adobe {
+        height: 217px;
+        width: 217px;
+        background-color: $cyan;
+
+        & div:first-child {
+          font-size: 6px;
+        }
+
+        & div:nth-child(2) {
+          font-size: 23px;
+          color: $navy;
+        }
+      }
+
+      #skills-li-spanish {
+        height: 434px;
+        width: 434px;
+        background-color: $cyan;
+
+        & div:first-child {
+          font-size: 24px;
+        }
+
+        & div:nth-child(2) {
+          font-size: 46px;
+          color: $navy;
+        }
+      }
+
+      #skills-li-powerpoint {
+        height: 291px;
+        width: 291px;
+        background-color: $light-cyan;
+        transform: translateY(-100%);
+
+        & div:first-child {
+          font-size: 15px;
+        }
+
+        & div:nth-child(2) {
+          font-size: 31px;
+          color: $red;
+        }
+      }
+
+      #skills-li-french {
+        height: 217px;
+        width: 217px;
+        background-color: $light-cyan;
+        transform: translateY(-100%);
+
+        & div:first-child {
+          font-size: 6px;
+        }
+
+        & div:nth-child(2) {
+          font-size: 23px;
+          color: $red;
+        }
+      }
+    }
+  }
+}
