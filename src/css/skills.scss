@@ -1,0 +1,96 @@
+@import './core/constants';
+@import './core/mixins';
+
+$content-height: 430px;
+$excel-width: 143px;
+$ppt-width: 288px;
+
+@mixin skill-font($type-size, $level-size, $spacing: 6px) {
+  .type {
+    font-size: $type-size;
+    padding-bottom: $spacing;
+  }
+
+  .level {
+    font-size: $level-size;
+  }
+}
+
+#skills {
+  padding: 115px 0 35px;
+  background: url('https://static.wixstatic.com/media/05e3dc_cc646f530d6846828d53dd3216ec8023~mv2.jpg/v1/fill/w_1920,h_933,al_c,q_85/05e3dc_cc646f530d6846828d53dd3216ec8023~mv2.webp')
+    no-repeat center center fixed;
+
+  h2 {
+    color: $white;
+
+    &:after {
+      background: $white;
+    }
+  }
+
+  ul {
+    background: $cyan;
+    position: relative;
+    height: $content-height;
+
+    li {
+      @include flexCenter;
+      flex-direction: column;
+      font-family: $font-family-title;
+      position: absolute;
+      font-weight: bold;
+
+      .type {
+        color: $black;
+      }
+
+      .level {
+        color: $navy;
+      }
+    }
+
+    .excel,
+    .ppt,
+    .french {
+      background: $light-cyan;
+
+      .level {
+        color: $red;
+      }
+    }
+
+    .spanish {
+      @include size($content-height);
+      @include skill-font(26px, 48px);
+      right: 0;
+    }
+
+    .adobe,
+    .french {
+      @include size(218px);
+      @include skill-font(12px, 24px);
+      left: $ppt-width;
+    }
+
+    .french {
+      bottom: 0;
+    }
+
+    .ppt {
+      @include size($ppt-width);
+      @include skill-font(16px, 32px);
+      bottom: 0;
+    }
+
+    .excel,
+    .word {
+      @include size($excel-width);
+      @include skill-font(8px, 14px, 3px);
+    }
+
+    .word {
+      left: $excel-width;
+    }
+  }
+}

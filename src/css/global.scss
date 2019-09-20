@@ -8,6 +8,8 @@
  *****************/
 
 .my-cv {
+  min-width: 1024px;
+
   * {
     &,
     &:before,
@@ -36,14 +38,42 @@
     font-weight: bold;
   }
 
-  hr {
-    @include size(58px, 7px);
-    background: $red;
-    margin: 15px 0 40px;
-    border: none;
+  h2 {
+    position: relative;
+    font-size: $font-xl;
+    letter-spacing: 3px;
+
+    &:after {
+      @include size(58px, 7px);
+      content: '';
+      display: block;
+      background: $red;
+      margin: 15px 0 40px;
+      border: none;
+    }
   }
 
   .content {
-    @include center-block();
+    @include center-block;
+  }
+
+  .clearfix {
+    @include clearfix;
+  }
+
+  .download-btn {
+    @include vertical-center(40px);
+    display: inline-block;
+    padding: 0 55px;
+    border: 1px solid $white;
+    color: $white;
+    text-decoration: none;
+    font-size: $font-xs;
+
+    &:hover {
+      color: $light-red;
+      border-color: $light-red;
+      background: $white;
+    }
   }
 }

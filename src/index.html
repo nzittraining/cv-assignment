@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./css/index.scss" />
   </head>
   <body class="my-cv">
-    <header>
-      <a href="/">HOME</a
+    <header id="header" class="clearfix">
+      <a class="homepage" href="/">HOME</a
       ><a
+        class="download-btn"
         href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
         target="_blank"
         >DOWNLOAD MY FULL RESUME</a
@@ -202,42 +203,42 @@
         </li>
       </ul>
 
-      <!-- Skills -->
-      <section>
-        <h2>SKILLS</h2>
-        <ul>
-          <li>
-            <div>Microsoft Excel</div>
-            <div>Advanced</div>
-          </li>
-          <li>
-            <div>Microsoft Word</div>
-            <div>Advanced</div>
-          </li>
-          <li>
-            <div>Adobe</div>
-            <div>Proficient</div>
-          </li>
-          <li>
-            <div>Spanish</div>
-            <div>Advanced</div>
-          </li>
-          <li>
-            <div>PowerPoint</div>
-            <div>Proficient</div>
-          </li>
-          <li>
-            <div>French</div>
-            <div>Native</div>
-          </li>
-        </ul>
+      <section id="skills">
+        <div class="content">
+          <h2>SKILLS</h2>
+          <ul>
+            <li class="excel">
+              <div class="type">Microsoft Excel</div>
+              <div class="level">Advanced</div>
+            </li>
+            <li class="word">
+              <div class="type">Microsoft Word</div>
+              <div class="level">Advanced</div>
+            </li>
+            <li class="adobe">
+              <div class="type">Adobe</div>
+              <div class="level">Proficient</div>
+            </li>
+            <li class="spanish">
+              <div class="type">Spanish</div>
+              <div class="level">Advanced</div>
+            </li>
+            <li class="ppt">
+              <div class="type">PowerPoint</div>
+              <div class="level">Proficient</div>
+            </li>
+            <li class="french">
+              <div class="type">French</div>
+              <div class="level">Native</div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <div id="information">
         <section class="quick-id">
           <div class="content">
             <h2>QUICK ID</h2>
-            <hr />
             <table>
               <tr>
                 <td class="label">Phone</td>
@@ -274,7 +275,6 @@
         <section class="contact-me">
           <div class="content">
             <h2>CONTACT ME</h2>
-            <hr />
             <form action="/contact-me" method="POST">
               <div class="two-column">
                 <div class="form-group">
