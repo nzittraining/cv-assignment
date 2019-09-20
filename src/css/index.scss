@@ -14,9 +14,12 @@ header a {
   right: 65px;
   border: 1px white solid;
   padding: 12px 55px 12px 55px;
+  font-size: $font-s;
 }
 
 .fixed-home {
   position: fixed;
   left: 65px;
+  font-weight: bold;
+  font-size: $font-m;
 }
