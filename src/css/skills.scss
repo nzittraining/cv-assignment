@@ -44,7 +44,6 @@ h2 {
   height: $skill-s;
   width: $skill-s;
   position: absolute;
-  @include vertical-center($skill-s);
 }
 
 .skill-word {
@@ -52,7 +51,6 @@ h2 {
   height: $skill-s;
   width: $skill-s;
   position: absolute;
-  @include vertical-center($skill-s);
 }
 
 .skill-adobe {
@@ -60,7 +58,6 @@ h2 {
   width: $skill-m;
   margin-left: $skill-s * 2;
   position: absolute;
-  @include vertical-center($skill-m);
 }
 
 .skill-spanish {
@@ -68,7 +65,6 @@ h2 {
   width: $skill-xl;
   margin-left: $skill-s * 2 + $skill-m;
   position: absolute;
-  @include vertical-center($skill-xl);
 }
 
 .skill-pp {
@@ -76,7 +72,6 @@ h2 {
   width: $skill-l;
   margin-top: $skill-s;
   position: absolute;
-  @include vertical-center($skill-l);
 }
 
 .skill-french {
@@ -85,7 +80,6 @@ h2 {
   margin-left: $skill-l;
   margin-top: $skill-m;
   position: absolute;
-  @include vertical-center($skill-m);
 }
 
 .skill_white {
@@ -100,4 +94,8 @@ h2 {
   text-align: center;
   color: $navy;
   font-weight: bold;
+}
+
+.skill-name__heading {
+  color: black;
 }
