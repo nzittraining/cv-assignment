@@ -2,11 +2,12 @@
 @import './core/mixins';
 
 #information {
+  display: flex;
   .quick-id,
   .contact-me {
     padding: 70px 40px;
     min-height: 520px;
-
+    width: 50%;
     h2 {
       font-size: $font-xl;
     }

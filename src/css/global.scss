@@ -6,7 +6,12 @@
 /*****************
  *   CSS RESET   *
  *****************/
-
+body {
+  background-image: url('./images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
 .my-cv {
   * {
     &,
@@ -23,7 +28,6 @@
     font-size: $font-m;
     font-family: $font-family-content;
     color: $black;
-    background: $white;
   }
 
   h1,

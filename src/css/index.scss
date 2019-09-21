@@ -1,2 +1,25 @@
 @import './global';
 @import './information';
+@import './skills';
+
+header a {
+  z-index: 10;
+  text-decoration: none;
+  top: 40px;
+  color: $white;
+}
+
+.fixed-download {
+  position: fixed;
+  right: 65px;
+  border: 1px white solid;
+  padding: 12px 55px 12px 55px;
+  font-size: $font-s;
+}
+
+.fixed-home {
+  position: fixed;
+  left: 65px;
+  font-weight: bold;
+  font-size: $font-m;
+}

@@ -1,0 +1,100 @@
+@import './core/constants';
+@import './core/mixins';
+
+//skill container
+$skill-s: 145px;
+$skill-m: 217.5px;
+$skill-l: 290px;
+$skill-xl: 435px;
+
+h2 {
+  font-size: $font-xl;
+}
+
+#skills {
+  height: max-content;
+  position: relative;
+}
+
+.skills-heading {
+  padding-left: 245px;
+  padding-top: 115px;
+  padding-bottom: 55px;
+}
+
+.skills-heading::after {
+  content: '';
+  width: 50px;
+  border: 3px solid $white;
+  display: block;
+  margin-top: 30px;
+}
+
+.skills-container {
+  @include center-block;
+  width: 940px;
+  height: 434px;
+  margin-bottom: 35px;
+}
+
+//skills display
+
+.skill-excel {
+  height: $skill-s;
+  width: $skill-s;
+  position: absolute;
+}
+
+.skill-word {
+  margin-left: $skill-s;
+  height: $skill-s;
+  width: $skill-s;
+  position: absolute;
+}
+
+.skill-adobe {
+  height: $skill-m;
+  width: $skill-m;
+  margin-left: $skill-s * 2;
+  position: absolute;
+}
+
+.skill-spanish {
+  height: $skill-xl;
+  width: $skill-xl;
+  margin-left: $skill-s * 2 + $skill-m;
+  position: absolute;
+}
+
+.skill-pp {
+  height: $skill-l;
+  width: $skill-l;
+  margin-top: $skill-s;
+  position: absolute;
+}
+
+.skill-french {
+  height: $skill-m;
+  width: $skill-m;
+  margin-left: $skill-l;
+  margin-top: $skill-m;
+  position: absolute;
+}
+
+.skill_white {
+  background-color: $white;
+  text-align: center;
+  color: $red;
+  font-weight: bold;
+}
+
+.skill_cyan {
+  background-color: $cyan;
+  text-align: center;
+  color: $navy;
+  font-weight: bold;
+}
+
+.skill-name__heading {
+  color: black;
+}
