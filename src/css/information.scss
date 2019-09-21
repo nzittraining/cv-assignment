@@ -1,127 +1,117 @@
 @import './core/constants';
 @import './core/mixins';
 
-#information {
-  .quick-id,
-  .contact-me {
-    padding: 70px 40px;
-    min-height: 520px;
+// MY information css
+.information-section {
+  display: inline-block;
+  width: 49%;
+  height: 520px;
+  padding: 30px;
+  margin: 0;
+  border: 0;
+  color: white;
+  background: #314a74;
+  font-size: 15px;
+  position: relative;
+}
 
-    h2 {
-      font-size: $font-xl;
-    }
-  }
+.information-section-left {
+  @extend .information-section;
+  top: -315px;
+}
 
-  .quick-id {
-    color: $white;
-    background: $navy;
+.information-section-right {
+  @extend .information-section;
+  top: -5px;
+  left: -5px;
+  display: inline-block;
+  background: #bcc8dc;
+}
 
-    h2,
-    table {
-      width: 310px;
-    }
+.quick-id-header {
+  @extend .skills-header-public;
+  color: white;
+  left: 360px;
+}
 
-    h2 {
-      color: $white;
-    }
+.quick-id-header::after {
+  content: '';
+  display: block;
+  width: 50px;
+  border: 3px solid $dark-red;
+  margin: 28px 0;
+}
 
-    table {
-      line-height: 2;
-      font-weight: lighter;
-    }
+.contact-me-header {
+  @extend .skills-header-public;
+  left: 35px;
+  color: black;
+}
 
-    a {
-      &,
-      &:hover {
-        color: $white;
-        text-decoration: none;
-      }
-    }
+.contact-me-header::after {
+  content: '';
+  display: block;
+  width: 50px;
+  border: 3px solid $dark-red;
+  margin: 28px 0;
+}
 
-    .label {
-      width: 120px;
-      font-weight: bold;
-    }
-  }
+.table-left {
+  position: relative;
+  left: 360px;
+  top: 120px;
+}
 
-  .contact-me {
-    background: $cyan;
+.link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+}
 
-    h2,
-    form {
-      width: 430px;
-    }
+.left-table-font {
+  font-size: 20px;
+  width: 40%;
+}
 
-    label {
-      @include text-hide();
-    }
+.input-textarea {
+  border-bottom: 1px solid black;
+  background-color: #bcc8dc;
+  font-size: 16px;
+  line-height: 2.5;
+  position: relative;
+  left: 0;
+}
 
-    input {
-      @include vertical-center(42px);
-      padding: 3px;
-      padding-left: 12px;
-    }
+.submit-button {
+  background-color: #bcc8dc;
+  color: white;
+  border: 0 solid #555555;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  width: 150px;
+  left: 100px;
+  line-height: 2.5;
+  cursor: pointer;
+}
 
-    textarea {
-      resize: none;
-      margin-bottom: 10px;
-      padding: 10px 12px;
-      height: 72px;
-    }
+.submit-button:hover {
+  background-color: #314a74;
+}
 
-    input,
-    textarea {
-      width: 100%;
-      outline: none;
-      border: 1px solid transparent;
-      border-bottom-color: $grey;
-      background: transparent;
-      margin-bottom: 3px;
+.inline-block {
+  display: inline-block;
+}
 
-      &::placeholder {
-        color: $grey;
-      }
+section td {
+  line-height: 2;
+}
 
-      &:focus {
-        background: $white;
-        border-color: $grey;
-      }
-    }
+input {
+  font-size: 13px;
+}
 
-    .two-column {
-      // https://css-tricks.com/fighting-the-space-between-inline-block-elements/#article-header-id-3
-      font-size: 0;
-
-      .form-group {
-        font-size: $font-m;
-        width: 47.5%;
-        display: inline-block;
-        margin-right: 5%;
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
-
-    .form-action {
-      text-align: center;
-    }
-
-    button {
-      @include vertical-center(30px);
-      padding: 0 15px;
-      background: transparent;
-      outline: 0;
-      border: none;
-      cursor: default;
-      font-size: $font-l;
-      font-weight: bold;
-      color: $white;
-
-      &:hover {
-        color: $dark-cyan;
-      }
-    }
-  }
+::placeholder {
+  color: black;
 }
