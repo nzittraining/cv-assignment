@@ -25,3 +25,25 @@
   background-color: transparent;
   border: 0;
 }
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+@mixin flexVerticalCenter($type: block) {
+  @if $type == inline {
+    display: inline-flex;
+  } @else {
+    display: flex;
+  }
+  align-items: center;
+}
+
+@mixin flexCenter($type: block) {
+  @include flexVerticalCenter($type);
+  justify-content: center;
+}
