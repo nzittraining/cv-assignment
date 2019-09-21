@@ -1,65 +1,103 @@
-@import './core/constants.scss';
-@import './core/mixins.scss';
+@import './core/constants';
+@import './core/mixins';
 
 .skills {
-  background-image: url(https://static.wixstatic.com/media/05e3dc_cc646f530d6846828d53dd3216ec8023~mv2.jpg/v1/fill/w_245h_138al_cq_80usm_0.66_1.00_0.01blur_2/05e3dc_cc646f530d6846828d53dd3216ec8023~mv2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
   min-height: 708.03px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
   .skills_title {
     margin: 0 auto;
     padding-top: 102px;
     width: 941px;
-    ::after {
-      border-top: 2px solid $white;
-    }
+
     h2 {
       color: $white;
       font-family: $font-family-title;
       font-size: $font_xl;
       letter-spacing: 3.8px;
+      &:after {
+        border-top: 5px solid $white;
+        display: block;
+        content: '';
+        width: 56px;
+        height: 7px;
+        margin-top: 26px;
+      }
     }
   }
   .skills_content {
     height: 434px;
     width: 941px;
     margin: 0 auto;
+    margin-bottom: 40px;
     display: flex;
-    .skill_boxs {
-      flex: 1;
-      display: block;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    flex-flow: row wrap;
 
+    .skill_boxs {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
       &.light_color_box {
-        background-color: $cyan;
+        background-color: $white;
+        .skills_level {
+          color: $red;
+          font-weight: 700;
+          font-size: 200%;
+        }
       }
       &.dark_color_box {
         background-color: $dark-cyan;
+        .skills_level {
+          color: $navy;
+          font-size: 200%;
+          font-weight: 700;
+        }
       }
       .skills_name {
-        text-align: center;
         color: rgb(7, 10, 14);
         font-family: avenir-lt-w01_85-heavy1475544;
+        text-align: center;
       }
 
       .skills_level {
         text-align: center;
-        color: #df3143;
         font-family: avenir-lt-w01_85-heavy1475544;
       }
     }
 
     .skills_ms_excel {
-      @mixin size($width: 145.5px) {
-      }
-      &.skills_name {
-        font-size: 40px;
-      }
+      @include size(145px);
+
+      font-size: 10px;
+    }
+    .skills_ms_word {
+      @include size(145px);
+      font-size: 10px;
+    }
+    .skills_adobe {
+      @include size(217px);
+      font-size: $font-s;
+    }
+    .skills_spanish {
+      @include size(434px);
+      font-size: $font-l;
+    }
+    .skills_ms_ppt {
+      @include size(290px);
+      font-size: $font-m;
+      transform: translateY(-290px);
+    }
+    .skills_french {
+      @include size(217px);
+      font-size: $font-s;
+      transform: translateY(-217px);
     }
   }
+  background-image: url(../img/05e3dc_cc646f530d6846828d53dd3216ec8023_mv2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
