@@ -7,10 +7,11 @@
     <title>John Roberts' CV</title>
     <link rel="stylesheet" href="./css/index.scss" />
   </head>
-  <body class="my-cv">
+  <body>
     <header>
-      <a href="/">HOME</a
-      ><a
+      <a href="/" class="HOME">HOME</a>
+      <a
+        class="download-resume-nav"
         href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
         target="_blank"
         >DOWNLOAD MY FULL RESUME</a
@@ -19,7 +20,7 @@
 
     <main>
       <!-- Avatar & Cover Background -->
-      <div>
+      <div class="Cover_Background">
         <h1>John Roberts<br /><span>BUSINESS EXPERT</span></h1>
         <img
           src="https://static.wixstatic.com/media/86f442ff0674441faadc2994b1b33e77.jpg/v1/crop/x_130,y_160,w_1320,h_1311/fill/w_496,h_488,al_c,q_80,usm_0.66_1.00_0.01/86f442ff0674441faadc2994b1b33e77.webp"
@@ -29,22 +30,32 @@
 
       <!-- Carousel -->
       <ul>
-        <li>
+        <!-- Carousel-1 -->
+        <li class="Carousel">
           <div>
             <h2>ABOUT ME</h2>
             <ul>
               <li>
                 <a
+                  class="media-icon"
                   href="https://www.linkedin.com/company/wix-com"
                   target="_blank"
                   >LinkedIn</a
                 >
               </li>
               <li>
-                <a href="https://twitter.com/wix" target="_blank">Twitter</a>
+                <a
+                  class="media-icon"
+                  href="https://twitter.com/wix"
+                  target="_blank"
+                  >Twitter</a
+                >
               </li>
               <li>
-                <a href="https://www.facebook.com/wix" target="_blank"
+                <a
+                  class="media-icon"
+                  href="https://www.facebook.com/wix"
+                  target="_blank"
                   >Facebook</a
                 >
               </li>
@@ -69,7 +80,8 @@
           </div>
         </li>
 
-        <li>
+        <!-- Carousel-2 -->
+        <li class="Carousel">
           <div>
             <h2>EXPERIENCE</h2>
             <a
@@ -115,7 +127,8 @@
           </ol>
         </li>
 
-        <li>
+        <!-- Carousel-3 -->
+        <li class="Carousel">
           <div>
             <h2>EDUCATION</h2>
             <a
@@ -163,7 +176,8 @@
           </ol>
         </li>
 
-        <li>
+        <!-- Carousel-4 -->
+        <li class="Carousel">
           <div>
             <h2>HOBBIES & INTERESTS</h2>
             <a
@@ -203,132 +217,140 @@
       </ul>
 
       <!-- Skills -->
-      <section>
-        <h2>SKILLS</h2>
-        <ul>
-          <li>
-            <div>Microsoft Excel</div>
-            <div>Advanced</div>
+      <section class="skills-section">
+        <h2 class="skills-header">SKILLS</h2>
+        <div class="decoration-div-first"></div>
+
+        <ul class="wrapper-box">
+          <li class="skill-Excel">
+            <div class="smaller-font">Microsoft Excel</div>
+            <div class="dark_red_font">Advanced</div>
           </li>
-          <li>
-            <div>Microsoft Word</div>
-            <div>Advanced</div>
+          <li class="skill-Word">
+            <div class="smaller-font">Microsoft Word</div>
+            <div class="dark_bule_font">Advanced</div>
           </li>
-          <li>
-            <div>Adobe</div>
-            <div>Proficient</div>
+          <li class="skill-Adobe">
+            <div class="smaller-font">Adobe</div>
+            <div class="dark_bule_font">Proficient</div>
           </li>
-          <li>
-            <div>Spanish</div>
-            <div>Advanced</div>
+          <li class="skill-Spanish">
+            <div class="smaller-font">Spanish</div>
+            <div class="dark_bule_font">Advanced</div>
           </li>
-          <li>
-            <div>PowerPoint</div>
-            <div>Proficient</div>
+          <li class="skill-PowerPoint">
+            <div class="smaller-font">PowerPoint</div>
+            <div class="dark_red_font">Proficient</div>
           </li>
-          <li>
-            <div>French</div>
-            <div>Native</div>
+          <li class="skill-French">
+            <div class="smaller-font">French</div>
+            <div class="dark_red_font">Native</div>
           </li>
         </ul>
       </section>
 
-      <div id="information">
-        <section class="quick-id">
-          <div class="content">
-            <h2>QUICK ID</h2>
-            <hr />
-            <table>
-              <tr>
-                <td class="label">Phone</td>
-                <td>
-                  <a href="tel:123-456-7890">123-456-7890</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="label">
-                  Email
-                </td>
-                <td>
-                  <a href="mailto:info@mysite.com">info@mysite.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="label">Website</td>
-                <td>
-                  <a href="http://www.wix.com" target="_blank">www.wix.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="label">Address</td>
-                <td>
-                  <address>
-                    500 Terry Francois Street San Francisco, CA 94158
-                  </address>
-                </td>
-              </tr>
-            </table>
-          </div>
+      <!-- LEFT INFORMATION -->
+      <div>
+        <section class="information-section-left">
+          <h2 class="quick-id-header">QUICK ID</h2>
+
+          <table class="table-left">
+            <tr>
+              <th class="left-table-font">Phone</th>
+              <td><a href="tel:123-456-7890" class="link">123-456-7890</a></td>
+            </tr>
+            <tr>
+              <th class="left-table-font">Email</th>
+              <td>
+                <a href="mailto:info@mysite.com" class="link"
+                  >info@mysite.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th class="left-table-font">Website</th>
+              <td>
+                <a href="http://www.wix.com" target="_blank" class="link"
+                  >www.wix.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th class="left-table-font">Address</th>
+              <td>500 Terry Francois Street</td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>San Francisco, CA 94158</td>
+            </tr>
+          </table>
         </section>
 
-        <section class="contact-me">
-          <div class="content">
-            <h2>CONTACT ME</h2>
-            <hr />
-            <form action="/contact-me" method="POST">
-              <div class="two-column">
-                <div class="form-group">
-                  <label for="contact-name">Name</label>
-                  <input
-                    id="contact-name"
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="contact-email">Email</label>
-                  <input
-                    id="contact-email"
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                  />
-                </div>
-              </div>
+        <!-- RIGHT INFORMATION -->
+        <section class="information-section-right">
+          <h2 class="contact-me-header">CONTACT ME</h2>
 
-              <div class="form-group">
-                <label for="contact-subject">Subject</label>
-                <input
-                  id="contact-subject"
-                  type="text"
-                  name="subject"
-                  placeholder="Subject"
-                />
-              </div>
+          <form action="/sign-up" method="POST">
+            <div class="inline-block">
+              <label for="name"></label>
+              <input
+                class="input-textarea"
+                id="name"
+                type="text"
+                name="name"
+                value=""
+                placeholder="Name"
+                size="25"
+              />
+            </div>
 
-              <div class="form-group">
-                <label for="contact-message">Message</label>
-                <textarea
-                  id="contact-message"
-                  name="message"
-                  row="5"
-                  placeholder="Message"
-                ></textarea>
-              </div>
+            <div class="inline-block">
+              <input
+                class="input-textarea"
+                id="email"
+                type="text"
+                name="email"
+                value=""
+                placeholder="Email"
+                size="25"
+              />
+            </div>
 
-              <div class="form-action">
-                <button type="submit">Submit</button>
-              </div>
-            </form>
-          </div>
+            <div>
+              <label for="subject"></label>
+              <input
+                class="input-textarea"
+                id="subject"
+                type="text"
+                name="subject"
+                value=""
+                placeholder="Subject"
+                size="56"
+              />
+            </div>
+
+            <textarea
+              class="input-textarea"
+              id="message"
+              name="message"
+              rows="3"
+              cols="58"
+              placeholder="Message"
+            ></textarea>
+
+            <div>
+              <button class="submit-button" type="submit">Submit</button>
+            </div>
+          </form>
         </section>
       </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
       <div>
         <a
+          class="download-resume"
           href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
           target="_blank"
           >DOWNLOAD MY FULL RESUME</a
@@ -338,24 +360,36 @@
           <a href="http://wix.com" target="_blank">Wix.com</a>
         </p>
       </div>
-
       <div>
         <ul>
           <li>
-            <a href="https://www.linkedin.com/company/wix-com" target="_blank"
+            <a
+              class="media-icon"
+              href="https://www.linkedin.com/company/wix-com"
+              target="_blank"
               >LinkedIn</a
             >
           </li>
           <li>
-            <a href="https://twitter.com/wix" target="_blank">Twitter</a>
+            <a class="media-icon" href="https://twitter.com/wix" target="_blank"
+              >Twitter</a
+            >
           </li>
           <li>
-            <a href="https://plus.google.com/+Wix" target="_blank"
+            <a
+              class="media-icon"
+              href="https://plus.google.com/+Wix"
+              target="_blank"
               >Google Plus</a
             >
           </li>
           <li>
-            <a href="https://www.facebook.com/wix" target="_blank">Facebook</a>
+            <a
+              class="media-icon"
+              href="https://www.facebook.com/wix"
+              target="_blank"
+              >Facebook</a
+            >
           </li>
         </ul>
         <p>Follow me on social netwroks</p>
