@@ -1,0 +1,48 @@
+@import './core/constants';
+@import './core/mixins';
+
+#nav_content {
+  position: fixed;
+  font-family: $font-family-title, sans-serif;
+  margin-top: 40px;
+  width: 100%;
+  .home_button {
+    margin-top: 24px;
+    margin-left: 65px;
+    width: 210px;
+    height: 96px;
+    display: inline-block;
+    a {
+      color: $white;
+      font-weight: 600;
+      font-size: $font_l;
+      &:link &:visited {
+        color: $white;
+        background-color: transparent;
+      }
+      &:hover {
+        color: $cyan;
+      }
+    }
+  }
+  .download_button {
+    float: right;
+    display: block;
+    height: 40px;
+    margin-top: 14px;
+    margin-right: 64px;
+    justify-self: end;
+    a {
+      color: $white;
+      border: 1px $white solid;
+
+      padding: 12px 54px;
+      font-size: 15px;
+      &:hover {
+        border-color: $red;
+        color: $red;
+        background-color: $white;
+      }
+    }
+  }
+}
