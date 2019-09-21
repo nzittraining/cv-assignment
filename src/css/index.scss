@@ -1,3 +1,89 @@
 @import './global';
 @import './header';
 @import './information';
+
+$whitepart: #ffffff;
+$bluepart: #314a74;
+$redpart: #d93347;
+
+div,
+form,
+input,
+textarea,
+h2 {
+  border: 0;
+}
+
+.red {
+  color: $redpart;
+}
+.blue {
+  color: $bluepart;
+}
+
+.skill-part {
+  width: 980px;
+  padding-top: 430px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -41%);
+
+  z-index: 0;
+  position: relative;
+  h2 {
+    color: white;
+    font-size: 35px;
+  }
+}
+
+.skill-lists {
+  @include size(100%, 435px);
+  display: flex;
+  flex-wrap: wrap;
+  float: top;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.small-blue {
+  height: 145.5px;
+  width: 145.5px;
+  background-color: $cyan;
+}
+
+.mid-blue {
+  height: 217px;
+  width: 217px;
+  background-color: $cyan;
+}
+
+.large-blue {
+  height: 434px;
+  width: 434px;
+  background-color: $cyan;
+}
+
+.large-white {
+  height: 291px;
+  width: 291px;
+  background-color: $whitepart;
+  transform: translateY(-100%);
+}
+
+.mid-white {
+  height: 217px;
+  width: 217px;
+  background-color: $whitepart;
+  transform: translateY(-100%);
+}
+
+.small-white {
+  height: 145.5px;
+  width: 145.5px;
+  background-color: $whitepart;
+}
