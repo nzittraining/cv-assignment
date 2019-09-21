@@ -1,2 +1,167 @@
 @import './global';
 @import './information';
+
+$basic-blue: #bcc8dc;
+$basic-grey: #edeff5;
+$dark-red: #d93347;
+$dark-blue: #314a74;
+
+.HOME {
+  position: fixed;
+  left: 70px;
+  top: 68px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.HOME:hover {
+  color: $basic-blue;
+}
+
+header {
+  height: 200px;
+}
+
+section ul {
+  height: 440px;
+  width: 948px;
+  position: relative;
+  left: 220px;
+  top: 230px;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.wrapper-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  left: 360px;
+  top: 130px;
+}
+
+.wrapper-box > * {
+  padding: 20px;
+  flex-grow: 0;
+  vertical-align: middle;
+}
+
+//Skills Name and Title
+.dark_red_font {
+  color: $dark-red;
+  position: relative;
+  top: 40%;
+}
+
+.dark_bule_font {
+  color: $dark-blue;
+  position: relative;
+  top: 40%;
+}
+
+.smaller-font {
+  position: relative;
+  top: 40%;
+  font-size: 60%;
+}
+
+///////////// Skills
+.skills-section {
+  height: 730px;
+  z-index: 0;
+  background: url('../css/背景.png') fixed no-repeat;
+}
+
+.skills-header-public {
+  position: relative;
+  font-size: 30px;
+  top: 78px;
+  font-weight: bold;
+}
+
+.skills-header {
+  @extend .skills-header-public;
+  color: white;
+  left: 360px;
+}
+
+.skills-header::after {
+  content: '';
+  display: block;
+  width: 50px;
+  border: 3px solid red;
+  margin: 28px 0;
+}
+
+.skill-Excel {
+  flex-grow: 1;
+  height: 145px;
+  background-color: $basic-grey;
+  font-size: 90%;
+}
+
+.skill-Word {
+  flex-grow: 1;
+  height: 145px;
+  background-color: $basic-blue;
+  font-size: 90%;
+}
+
+.skill-Adobe {
+  flex-grow: 2;
+  height: 215px;
+  font-size: 130%;
+  background-color: $basic-blue;
+}
+
+.skill-Spanish {
+  flex-grow: 4;
+  height: 440px;
+  font-size: 280%;
+  background-color: $basic-blue;
+}
+
+.skill-PowerPoint {
+  height: 295px;
+  width: 360px;
+  position: absolute;
+  top: 145px;
+  background-color: $basic-grey;
+  font-size: 200%;
+}
+
+.skill-French {
+  height: 225px;
+  width: 250px;
+  position: absolute;
+  top: 215px;
+  left: 313px;
+  font-size: 130%;
+  background-color: $basic-grey;
+}
+
+form {
+  position: relative;
+  left: 35px;
+  top: 110px;
+}
+
+.download-resume {
+  opacity: 0.8;
+  border: 2px solid;
+  color: white;
+  padding: 12px 50px 12px 50px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.download-resume-nav {
+  @extend .download-resume;
+  position: fixed;
+  right: 70px;
+  top: 62px;
+}
