@@ -5,7 +5,7 @@
     "build": "parcel build src/index.html",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint ./src/js",
-    "lint:css": "stylelint \"./src/css/**/*.scss\"",
+    "lint:css": "stylelint './src/css/**/*.scss'",
     "prebuild": "rimraf ./dist",
     "start": "parcel src/index.html --open"
   },
