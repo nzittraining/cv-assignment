@@ -7,14 +7,17 @@
     <title>John Roberts' CV</title>
     <link rel="stylesheet" href="./css/index.scss" />
   </head>
+
   <body class="my-cv">
-    <header>
-      <a href="/">HOME</a
-      ><a
-        href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
-        target="_blank"
-        >DOWNLOAD MY FULL RESUME</a
-      >
+    <header id="nav_content">
+      <div class="home_button"><a href="/">HOME</a></div>
+      <div class="download_button">
+        <a
+          href="https://docs.wixstatic.com/ugd/84770f_a594f88e0dd34b7ca253388dd6f4c9bb.pdf"
+          target="_blank"
+          >DOWNLOAD MY FULL RESUME</a
+        >
+      </div>
     </header>
 
     <main>
@@ -203,32 +206,41 @@
       </ul>
 
       <!-- Skills -->
-      <section>
-        <h2>SKILLS</h2>
-        <ul>
-          <li>
-            <div>Microsoft Excel</div>
-            <div>Advanced</div>
+      <section class="skills">
+        <div class="skills_title">
+          <h2>SKILLS</h2>
+        </div>
+
+        <ul class="skills_content">
+          <li class="skills_ms_excel skill_boxs light_color_box">
+            <div class="skills_name">Microsoft Excel</div>
+            <div class="skills_level">Advanced</div>
           </li>
-          <li>
-            <div>Microsoft Word</div>
-            <div>Advanced</div>
+          <!--
+        -->
+          <li class="skills_ms_word skill_boxs dark_color_box">
+            <div class="skills_name">Microsoft Word</div>
+            <div class="skills_level">Advanced</div>
           </li>
-          <li>
-            <div>Adobe</div>
-            <div>Proficient</div>
+          <!--
+        -->
+          <li class="skills_adobe skill_boxs dark_color_box">
+            <div class="skills_name">Adobe</div>
+            <div class="skills_level">Proficient</div>
           </li>
-          <li>
-            <div>Spanish</div>
-            <div>Advanced</div>
+          <!--
+        -->
+          <li class="skills_spanish skill_boxs dark_color_box">
+            <div class="skills_name">Spanish</div>
+            <div class="skills_level">Advanced</div>
           </li>
-          <li>
-            <div>PowerPoint</div>
-            <div>Proficient</div>
+          <li class="skills_ms_ppt skill_boxs light_color_box">
+            <div class="skills_name">PowerPoint</div>
+            <div class="skills_level">Proficient</div>
           </li>
-          <li>
-            <div>French</div>
-            <div>Native</div>
+          <li class="skills_french skill_boxs light_color_box">
+            <div class="skills_name">French</div>
+            <div class="skills_level">Native</div>
           </li>
         </ul>
       </section>

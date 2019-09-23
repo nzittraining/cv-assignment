@@ -46,4 +46,7 @@
   .content {
     @include center-block();
   }
+  a {
+    text-decoration: none;
+  }
 }

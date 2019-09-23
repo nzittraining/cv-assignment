@@ -2,11 +2,14 @@
 @import './core/mixins';
 
 #information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   .quick-id,
   .contact-me {
     padding: 70px 40px;
     min-height: 520px;
-
+    width: 100%;
     h2 {
       font-size: $font-xl;
     }
@@ -15,7 +18,12 @@
   .quick-id {
     color: $white;
     background: $navy;
-
+    display: flex;
+    flex-direction: row-reverse;
+    .content {
+      margin-right: 120px;
+      padding-left: 714px;
+    }
     h2,
     table {
       width: 310px;
